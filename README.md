@@ -64,7 +64,7 @@ python scripts/compute_jaccard_profile.py \
 
 - Python: 3.10
 - NumPy / pandas / scikit-learn: see `environment.yml`
-- MATLAB: scripts were last harmonized for the v191 JBI artwork pass
+- MATLAB: see the figure scripts for the plotting and export settings used for the packaged figures
 
 Reproducing the figures from the included tables should take only a few minutes once the environment is set up. Full model retraining is outside the scope of this repository.
 
