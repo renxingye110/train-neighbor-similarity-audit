@@ -4,6 +4,8 @@ This repository accompanies our JBI submission on post hoc train-neighbor simila
 
 It is a compact reproducibility package rather than a full project dump. We include the processed result tables, figure source data, machine-readable manuscript tables, plotting scripts, and summary outputs needed to inspect the main results. We do not redistribute raw third-party database snapshots, large embedding arrays, checkpoint archives, or historical manuscript files.
 
+Archived release (Zenodo DOI): https://doi.org/10.5281/zenodo.20842729
+
 ## Repository purpose
 
 - Provide the data tables and scripts needed to reproduce the main figures without retraining models.
