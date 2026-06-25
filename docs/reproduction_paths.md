@@ -1,0 +1,52 @@
+# Reproduction paths
+
+This note gives the shortest practical routes through the repository, depending on what you want to check.
+
+## 1. Reproduce the three main figures
+
+Use the CSV files in `data/figure_source/` together with the MATLAB scripts in `scripts/`.
+
+- Figure 1: `scripts/make_figure1.m`
+- Figure 2: `scripts/make_figure2.m`
+- Figure 3: `scripts/make_figure3.m`
+
+Expected outputs are written to `figures/`.
+
+## 2. Regenerate packaged summary outputs
+
+Create the Python environment first:
+
+```bash
+conda env create -f environment.yml
+conda activate train-neighbor-similarity-audit
+```
+
+Then run:
+
+```bash
+python scripts/source_heldout_summary.py
+python scripts/candidate_prioritization_unique.py
+```
+
+These scripts regenerate the small JSON summaries included in `results/`.
+
+## 3. Compute a similarity profile on new data
+
+Use:
+
+```bash
+python scripts/compute_jaccard_profile.py \
+  --train_fasta train.fasta \
+  --test_fasta test.fasta \
+  --predictions preds.npy \
+  --labels labels.npy \
+  --output profile.json
+```
+
+This path is generic. It is included so the post hoc performance-similarity profile can be applied to user-supplied train/test splits and prediction outputs.
+
+## 4. Inspect manuscript tables without opening the manuscript
+
+Use `data/tables/` for CSV exports of the current main-manuscript and supplementary tables.
+
+If you want the exact manuscript-to-file mapping, see `docs/manuscript_file_map.md`.
