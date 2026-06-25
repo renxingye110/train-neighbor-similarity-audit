@@ -1,6 +1,6 @@
 # Third-party data sources
 
-This repository does not redistribute raw third-party database records. The analyses reported in the manuscript draw on public sources that should be accessed from their original homes and cited as described in the manuscript.
+The reported analyses draw on several public data sources. We do not redistribute raw third-party database records here. If you need the original records, please obtain them from the primary sources cited in the manuscript.
 
 ## Datasets used directly in the reported results
 

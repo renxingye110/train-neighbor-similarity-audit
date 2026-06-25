@@ -1,6 +1,6 @@
 # Reproducibility notes
 
-This is a review-facing minimal repository, not a full training archive.
+This repository is meant to support review and reuse of the reported analyses. It is not a full training archive.
 
 ## Included reproduction paths
 
