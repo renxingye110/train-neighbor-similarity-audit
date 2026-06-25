@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying manuscript and update the metadata fields before public release."
+title: "Post hoc train-neighbor similarity auditing for biomedical protein sequence benchmarks"
+type: software
+version: 1.0.0-review
+license: MIT
+repository-code: "https://github.com/[organization-or-user]/train-neighbor-similarity-audit"
+abstract: "Minimal JBI-ready reproducibility package containing figure source data, machine-readable tables, summary outputs, and plotting scripts for a post hoc train-neighbor similarity audit of biomedical protein sequence benchmarks."

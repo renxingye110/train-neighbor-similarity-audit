@@ -1,0 +1,5 @@
+ID,Emb.,Physchem,Dim.,Full mAP,Clean mAP,Delta (pp),Full AUC
+G,Single-layer,No,1280,86.77 ± 0.30,73.10 ± 1.20,-13.67,98.06
+C,Multilayer,No,1280,88.68 ± 0.20,77.13 ± 0.40,-11.55,98.39
+H,Single-layer,Yes,1300,84.91 ± 0.40,68.13 ± 0.10,-16.78,97.94
+B,Multilayer,Yes,1300,88.84 ± 0.20,77.37 ± 0.20,-11.48,98.51

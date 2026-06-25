@@ -1,0 +1,46 @@
+{
+  "summary": {
+    "candidate_pool_size": 4536,
+    "audited_pool_size": 3880,
+    "audit_threshold": 0.4,
+    "k": 3,
+    "model": "Configuration G, ampmodel_single_1280d",
+    "raw_median_score": 0.99435272,
+    "audited_median_score": 0.99427756,
+    "raw_median_jaccard": 0.18350168,
+    "audited_median_jaccard": 0.11442006,
+    "top20_overlap": 16
+  },
+  "composition": [
+    {
+      "list_name": "Raw top 20",
+      "similarity_class": "low",
+      "count": 16
+    },
+    {
+      "list_name": "Raw top 20",
+      "similarity_class": "medium",
+      "count": 3
+    },
+    {
+      "list_name": "Raw top 20",
+      "similarity_class": "high",
+      "count": 1
+    },
+    {
+      "list_name": "Audited top 20",
+      "similarity_class": "low",
+      "count": 20
+    },
+    {
+      "list_name": "Audited top 20",
+      "similarity_class": "medium",
+      "count": 0
+    },
+    {
+      "list_name": "Audited top 20",
+      "similarity_class": "high",
+      "count": 0
+    }
+  ]
+}

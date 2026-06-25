@@ -1,0 +1,2 @@
+candidate_pool_size,audited_pool_size,audit_threshold,k,model,raw_median_score,audited_median_score,raw_median_jaccard,audited_median_jaccard,top20_overlap
+4536,3880,0.4,3,"Configuration G, ampmodel_single_1280d",0.99435272,0.99427756,0.18350168,0.11442006,16
