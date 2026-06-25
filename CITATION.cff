@@ -1,8 +1,14 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite the accompanying manuscript."
-title: "Post hoc train-neighbor similarity auditing for biomedical protein sequence benchmarks"
+title: "Reproducibility materials for post hoc train-neighbor similarity auditing of biomedical protein sequence benchmarks"
 type: software
-version: 1.0.0-review
+version: 1.0.0
 license: MIT
 repository-code: "https://github.com/renxingye110/train-neighbor-similarity-audit"
 abstract: "Reproducibility package containing figure source data, manuscript tables, summary outputs, and plotting scripts for a post hoc train-neighbor similarity audit of biomedical protein sequence benchmarks."
+keywords:
+  - biomedical benchmark evaluation
+  - protein sequence modeling
+  - k-mer Jaccard similarity
+  - train-neighbor similarity
+  - reproducibility package
