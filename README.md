@@ -18,7 +18,7 @@ This is not an AMP discovery release. The Figure 3 example is a retrospective pr
 
 If you use this repository, please cite the Zenodo record:
 
-Ren X. Reproducibility materials for post hoc train-neighbor similarity auditing of biomedical protein sequence benchmarks. Zenodo. 2026. doi:10.5281/zenodo.20842729
+Ren X. Reproducibility materials for post hoc train-neighbor similarity auditing of biomedical protein sequence benchmarks. Zenodo. 2026. doi: 10.5281/zenodo.20842729
 
 ## Start here
 
