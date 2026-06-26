@@ -1,6 +1,6 @@
 # Repository guide
 
-This repository is organized as a submission-facing reproducibility package. The goal is to make the reported figures, summary tables, and supporting scripts easy to inspect without requiring the full local project history.
+This repository is organized as a compact reproducibility package. The goal is to make the reported figures, summary tables, and supporting scripts easy to inspect without requiring the full local project history.
 
 ## Top-level folders
 
@@ -8,7 +8,7 @@ This repository is organized as a submission-facing reproducibility package. The
   Source tables used to build Figures 1-3.
 
 - `data/tables/`
-  Machine-readable CSV exports of the current main-manuscript and supplementary tables.
+  Machine-readable CSV exports of the manuscript and supplementary tables included in this release.
 
 - `scripts/`
   MATLAB figure scripts and lightweight Python utilities used for summary generation and generic profile computation.
@@ -35,7 +35,7 @@ This repository is organized as a submission-facing reproducibility package. The
 - Full retraining from raw source databases
 - Regeneration of local embedding matrices
 - Redistribution of raw third-party sequence database snapshots
-- Distribution of model checkpoints or internal working files
+- Distribution of model checkpoints or other local working files
 
 ## First places to look
 

@@ -12,7 +12,7 @@ Use the CSV files in `data/figure_source/` together with the MATLAB scripts in `
 
 Expected outputs are written to `figures/`.
 
-## 2. Regenerate packaged summary outputs
+## 2. Regenerate summary outputs
 
 Create the Python environment first:
 
@@ -47,6 +47,6 @@ This path is generic. It is included so the post hoc performance-similarity prof
 
 ## 4. Inspect manuscript tables without opening the manuscript
 
-Use `data/tables/` for CSV exports of the current main-manuscript and supplementary tables.
+Use `data/tables/` for CSV exports of the manuscript and supplementary tables included in this release.
 
 If you want the exact manuscript-to-file mapping, see `docs/manuscript_file_map.md`.

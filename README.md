@@ -1,8 +1,8 @@
 # Post hoc train-neighbor similarity auditing for biomedical protein sequence benchmarks
 
-This repository accompanies our JBI submission on post hoc train-neighbor similarity auditing for fixed biomedical protein sequence benchmarks.
+This repository accompanies the manuscript "Post hoc train-neighbor similarity auditing for biomedical protein sequence benchmarks."
 
-It is a compact reproducibility package rather than a full project dump. We include the processed result tables, figure source data, machine-readable manuscript tables, plotting scripts, and summary outputs needed to inspect the main results. We do not redistribute raw third-party database snapshots, large embedding arrays, checkpoint archives, or historical manuscript files.
+This repository is a compact reproducibility package rather than a full project dump. It includes the processed result tables, figure source data, machine-readable manuscript tables, plotting scripts, and summary outputs needed to inspect the reported results. It does not redistribute raw third-party database snapshots, large embedding arrays, checkpoint archives, or historical manuscript files.
 
 Archived release (Zenodo DOI): https://doi.org/10.5281/zenodo.20842729
 
@@ -13,6 +13,12 @@ Archived release (Zenodo DOI): https://doi.org/10.5281/zenodo.20842729
 - Document which public data sources were reused and why raw source records are not redistributed here.
 
 This is not an AMP discovery release. The Figure 3 example is a retrospective prioritization exercise that shows how a similarity constraint can change a fixed candidate ranking.
+
+## Citation
+
+If you use this repository, please cite the Zenodo record:
+
+Ren X. Reproducibility materials for post hoc train-neighbor similarity auditing of biomedical protein sequence benchmarks. Zenodo. 2026. doi:10.5281/zenodo.20842729
 
 ## Start here
 
@@ -71,7 +77,7 @@ Reproducing the figures from the included tables should take only a few minutes 
 ## Repository layout
 
 - `data/figure_source/`: source tables for Figures 1-3
-- `data/tables/`: machine-readable CSV exports from the current main manuscript and supplement
+- `data/tables/`: machine-readable CSV exports of the manuscript and supplementary tables included in this release
 - `scripts/`: a generic Jaccard-profile CLI, summary scripts for the source-held-out and retrospective prioritization analyses, and MATLAB figure scripts
 - `results/`: summary JSON exports and file checksums
 - `figures/`: final exported figures and graphical abstract PDF
@@ -84,7 +90,7 @@ More detail is provided in `docs/repository_guide.md`.
 - large local embedding arrays
 - model checkpoints
 - historical manuscript versions
-- internal planning files, prompt logs, or agent notes
+- private planning notes or other local working materials
 
 Raw third-party records should be obtained from the original cited sources listed in `docs/third_party_data_sources.md`.
 

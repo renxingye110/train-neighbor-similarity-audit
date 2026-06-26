@@ -16,4 +16,4 @@
 
 ## Table exports
 
-The `data/tables/` directory contains CSV exports of the current manuscript tables. The exported files preserve the visible table headers and cell text from the source DOCX files. Any abbreviations remain defined by the manuscript captions and surrounding text.
+The `data/tables/` directory contains CSV exports of the manuscript tables included in this release. The exported files preserve the visible table headers and cell text from the source DOCX files. Any abbreviations remain defined by the manuscript captions and surrounding text.
