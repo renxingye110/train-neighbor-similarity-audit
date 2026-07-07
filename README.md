@@ -4,7 +4,7 @@ This repository accompanies the manuscript "Post hoc train-neighbor similarity a
 
 This repository is a compact reproducibility package rather than a full project dump. It includes the processed result tables, figure source data, machine-readable manuscript tables, plotting scripts, and summary outputs needed to inspect the reported results. It does not redistribute raw third-party database snapshots, large embedding arrays, checkpoint archives, or historical manuscript files.
 
-Archived release (Zenodo DOI): https://doi.org/10.5281/zenodo.20842729
+Archived release (Zenodo DOI): https://doi.org/10.5281/zenodo.21235886
 
 ## Repository purpose
 
@@ -19,7 +19,7 @@ This is not an AMP discovery release. The Figure 3 example is a retrospective pr
 
 If you use this repository, please cite the Zenodo record:
 
-Ren X. Reproducibility materials for post hoc train-neighbor similarity auditing of biomedical protein sequence benchmarks. Zenodo. 2026. doi: 10.5281/zenodo.20842729
+Ren X. Reproducibility materials for post hoc train-neighbor similarity auditing of biomedical protein sequence benchmarks. Zenodo. 2026. doi: 10.5281/zenodo.21235886
 
 ## Start here
 
