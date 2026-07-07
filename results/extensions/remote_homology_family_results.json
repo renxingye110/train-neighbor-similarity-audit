@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "script": "remote_homology_family_current.py",
+    "benchmark": "TAPE remote homology",
+    "split": "family holdout",
+    "task": "7-class protein fold classification",
+    "feature_family": "3-mer binary sparse features",
+    "model_family": "multinomial logistic regression",
+    "n_train_full": 13048,
+    "n_train_clean": 12305,
+    "n_train_removed": 743,
+    "n_test": 1272,
+    "thresholds": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "clean_threshold": 0.4,
+    "n_classes": 7
+  },
+  "full_model": {
+    "accuracy": 0.7563,
+    "macro_ap": 0.7423,
+    "log_loss": 0.868464
+  },
+  "clean_model": {
+    "accuracy": 0.7107,
+    "macro_ap": 0.6629,
+    "log_loss": 1.02396
+  },
+  "bridge": {
+    "profile_span_macro_ap_pp": 16.21,
+    "profile_span_accuracy_pp": 9.08,
+    "signed_retraining_delta_macro_ap_pp": 7.94,
+    "abs_retraining_delta_macro_ap_pp": 7.94,
+    "signed_retraining_delta_accuracy_pp": 4.56,
+    "monotonic_macro_ap": true
+  },
+  "gradient": [
+    {
+      "threshold": 0.3,
+      "n_retained": 858,
+      "retention_pct": 67.5,
+      "accuracy": 0.6655,
+      "macro_ap": 0.5802,
+      "log_loss": 1.21775
+    },
+    {
+      "threshold": 0.4,
+      "n_retained": 922,
+      "retention_pct": 72.5,
+      "accuracy": 0.6779,
+      "macro_ap": 0.5978,
+      "log_loss": 1.151704
+    },
+    {
+      "threshold": 0.5,
+      "n_retained": 981,
+      "retention_pct": 77.1,
+      "accuracy": 0.6922,
+      "macro_ap": 0.607,
+      "log_loss": 1.094065
+    },
+    {
+      "threshold": 0.6,
+      "n_retained": 1053,
+      "retention_pct": 82.8,
+      "accuracy": 0.7094,
+      "macro_ap": 0.7037,
+      "log_loss": 1.033289
+    },
+    {
+      "threshold": 0.7,
+      "n_retained": 1119,
+      "retention_pct": 88.0,
+      "accuracy": 0.7239,
+      "macro_ap": 0.7135,
+      "log_loss": 0.979792
+    },
+    {
+      "threshold": 0.8,
+      "n_retained": 1183,
+      "retention_pct": 93.0,
+      "accuracy": 0.7388,
+      "macro_ap": 0.7286,
+      "log_loss": 0.929593
+    },
+    {
+      "threshold": 0.9,
+      "n_retained": 1259,
+      "retention_pct": 99.0,
+      "accuracy": 0.7538,
+      "macro_ap": 0.7406,
+      "log_loss": 0.876369
+    },
+    {
+      "threshold": 1.0,
+      "n_retained": 1272,
+      "retention_pct": 100.0,
+      "accuracy": 0.7563,
+      "macro_ap": 0.7423,
+      "log_loss": 0.868464
+    }
+  ],
+  "jaccard_stats": {
+    "mean": 0.2701,
+    "median": 0.121,
+    "max": 0.98,
+    "pct_above_40": 27.52,
+    "pct_below_or_equal_70": 87.97
+  }
+}

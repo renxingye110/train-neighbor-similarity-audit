@@ -1,0 +1,434 @@
+{
+  "metadata": {
+    "script": "deeploc_clean_retrain_bridge_current.py",
+    "dataset": "DeepLoc 2.0",
+    "embedding_path": "data\\deeploc\\deeploc_esm2_embeddings.npy",
+    "csv_path": "data\\deeploc\\multisub_5_partitions_unique.csv",
+    "test_partition": 0,
+    "targets": [
+      "Cytoplasm",
+      "Nucleus",
+      "Extracellular",
+      "Cell membrane",
+      "Mitochondrion"
+    ],
+    "jaccard_threshold": 0.4,
+    "profile_thresholds": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "n_train_full": 22340,
+    "n_train_clean": 22274,
+    "n_test": 5963
+  },
+  "tasks": {
+    "Cytoplasm": {
+      "train_pos_full": 7751,
+      "train_pos_clean": 7723,
+      "test_pos": 2119,
+      "full_test_mAP_100": 0.7295,
+      "full_test_AUC_100": 0.8501,
+      "clean_test_mAP_100": 0.7297,
+      "clean_test_AUC_100": 0.85,
+      "profile_span_pp": 0.4,
+      "signed_retraining_delta_pp": -0.03,
+      "abs_retraining_delta_pp": 0.03,
+      "monotonic": true,
+      "gradient": [
+        {
+          "threshold": 0.3,
+          "n_retained": 5841,
+          "retention_pct": 98.0,
+          "pos_retained": 2069,
+          "mAP": 0.7257,
+          "AUC": 0.8493
+        },
+        {
+          "threshold": 0.4,
+          "n_retained": 5889,
+          "retention_pct": 98.8,
+          "pos_retained": 2090,
+          "mAP": 0.7272,
+          "AUC": 0.8495
+        },
+        {
+          "threshold": 0.5,
+          "n_retained": 5906,
+          "retention_pct": 99.0,
+          "pos_retained": 2098,
+          "mAP": 0.7276,
+          "AUC": 0.8495
+        },
+        {
+          "threshold": 0.6,
+          "n_retained": 5930,
+          "retention_pct": 99.4,
+          "pos_retained": 2107,
+          "mAP": 0.7281,
+          "AUC": 0.8495
+        },
+        {
+          "threshold": 0.7,
+          "n_retained": 5953,
+          "retention_pct": 99.8,
+          "pos_retained": 2115,
+          "mAP": 0.7292,
+          "AUC": 0.8498
+        },
+        {
+          "threshold": 0.8,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 2119,
+          "mAP": 0.7295,
+          "AUC": 0.8501
+        },
+        {
+          "threshold": 0.9,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 2119,
+          "mAP": 0.7295,
+          "AUC": 0.8501
+        },
+        {
+          "threshold": 1.0,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 2119,
+          "mAP": 0.7295,
+          "AUC": 0.8501
+        }
+      ]
+    },
+    "Nucleus": {
+      "train_pos_full": 7849,
+      "train_pos_clean": 7829,
+      "test_pos": 1871,
+      "full_test_mAP_100": 0.8221,
+      "full_test_AUC_100": 0.8966,
+      "clean_test_mAP_100": 0.8212,
+      "clean_test_AUC_100": 0.8967,
+      "profile_span_pp": -0.1,
+      "signed_retraining_delta_pp": 0.09,
+      "abs_retraining_delta_pp": 0.09,
+      "monotonic": false,
+      "gradient": [
+        {
+          "threshold": 0.3,
+          "n_retained": 5841,
+          "retention_pct": 98.0,
+          "pos_retained": 1834,
+          "mAP": 0.8235,
+          "AUC": 0.8982
+        },
+        {
+          "threshold": 0.4,
+          "n_retained": 5889,
+          "retention_pct": 98.8,
+          "pos_retained": 1849,
+          "mAP": 0.8231,
+          "AUC": 0.8976
+        },
+        {
+          "threshold": 0.5,
+          "n_retained": 5906,
+          "retention_pct": 99.0,
+          "pos_retained": 1853,
+          "mAP": 0.8227,
+          "AUC": 0.8974
+        },
+        {
+          "threshold": 0.6,
+          "n_retained": 5930,
+          "retention_pct": 99.4,
+          "pos_retained": 1859,
+          "mAP": 0.8222,
+          "AUC": 0.8969
+        },
+        {
+          "threshold": 0.7,
+          "n_retained": 5953,
+          "retention_pct": 99.8,
+          "pos_retained": 1868,
+          "mAP": 0.8226,
+          "AUC": 0.897
+        },
+        {
+          "threshold": 0.8,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 1871,
+          "mAP": 0.8221,
+          "AUC": 0.8966
+        },
+        {
+          "threshold": 0.9,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 1871,
+          "mAP": 0.8221,
+          "AUC": 0.8966
+        },
+        {
+          "threshold": 1.0,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 1871,
+          "mAP": 0.8221,
+          "AUC": 0.8966
+        }
+      ]
+    },
+    "Extracellular": {
+      "train_pos_full": 2608,
+      "train_pos_clean": 2601,
+      "test_pos": 693,
+      "full_test_mAP_100": 0.8273,
+      "full_test_AUC_100": 0.9557,
+      "clean_test_mAP_100": 0.8181,
+      "clean_test_AUC_100": 0.9544,
+      "profile_span_pp": -0.5,
+      "signed_retraining_delta_pp": 0.92,
+      "abs_retraining_delta_pp": 0.92,
+      "monotonic": false,
+      "gradient": [
+        {
+          "threshold": 0.3,
+          "n_retained": 5841,
+          "retention_pct": 98.0,
+          "pos_retained": 681,
+          "mAP": 0.832,
+          "AUC": 0.9565
+        },
+        {
+          "threshold": 0.4,
+          "n_retained": 5889,
+          "retention_pct": 98.8,
+          "pos_retained": 682,
+          "mAP": 0.8306,
+          "AUC": 0.9563
+        },
+        {
+          "threshold": 0.5,
+          "n_retained": 5906,
+          "retention_pct": 99.0,
+          "pos_retained": 688,
+          "mAP": 0.8304,
+          "AUC": 0.9563
+        },
+        {
+          "threshold": 0.6,
+          "n_retained": 5930,
+          "retention_pct": 99.4,
+          "pos_retained": 690,
+          "mAP": 0.8295,
+          "AUC": 0.9561
+        },
+        {
+          "threshold": 0.7,
+          "n_retained": 5953,
+          "retention_pct": 99.8,
+          "pos_retained": 692,
+          "mAP": 0.8278,
+          "AUC": 0.9558
+        },
+        {
+          "threshold": 0.8,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 693,
+          "mAP": 0.8273,
+          "AUC": 0.9557
+        },
+        {
+          "threshold": 0.9,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 693,
+          "mAP": 0.8273,
+          "AUC": 0.9557
+        },
+        {
+          "threshold": 1.0,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 693,
+          "mAP": 0.8273,
+          "AUC": 0.9557
+        }
+      ]
+    },
+    "Cell membrane": {
+      "train_pos_full": 3132,
+      "train_pos_clean": 3121,
+      "test_pos": 1055,
+      "full_test_mAP_100": 0.6884,
+      "full_test_AUC_100": 0.8708,
+      "clean_test_mAP_100": 0.6863,
+      "clean_test_AUC_100": 0.8706,
+      "profile_span_pp": -0.1,
+      "signed_retraining_delta_pp": 0.2,
+      "abs_retraining_delta_pp": 0.2,
+      "monotonic": false,
+      "gradient": [
+        {
+          "threshold": 0.3,
+          "n_retained": 5841,
+          "retention_pct": 98.0,
+          "pos_retained": 1020,
+          "mAP": 0.6896,
+          "AUC": 0.8717
+        },
+        {
+          "threshold": 0.4,
+          "n_retained": 5889,
+          "retention_pct": 98.8,
+          "pos_retained": 1036,
+          "mAP": 0.689,
+          "AUC": 0.8718
+        },
+        {
+          "threshold": 0.5,
+          "n_retained": 5906,
+          "retention_pct": 99.0,
+          "pos_retained": 1043,
+          "mAP": 0.6894,
+          "AUC": 0.872
+        },
+        {
+          "threshold": 0.6,
+          "n_retained": 5930,
+          "retention_pct": 99.4,
+          "pos_retained": 1049,
+          "mAP": 0.6894,
+          "AUC": 0.8711
+        },
+        {
+          "threshold": 0.7,
+          "n_retained": 5953,
+          "retention_pct": 99.8,
+          "pos_retained": 1052,
+          "mAP": 0.688,
+          "AUC": 0.8706
+        },
+        {
+          "threshold": 0.8,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 1055,
+          "mAP": 0.6884,
+          "AUC": 0.8708
+        },
+        {
+          "threshold": 0.9,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 1055,
+          "mAP": 0.6884,
+          "AUC": 0.8708
+        },
+        {
+          "threshold": 1.0,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 1055,
+          "mAP": 0.6884,
+          "AUC": 0.8708
+        }
+      ]
+    },
+    "Mitochondrion": {
+      "train_pos_full": 2025,
+      "train_pos_clean": 2016,
+      "test_pos": 565,
+      "full_test_mAP_100": 0.6542,
+      "full_test_AUC_100": 0.8794,
+      "clean_test_mAP_100": 0.6538,
+      "clean_test_AUC_100": 0.8791,
+      "profile_span_pp": -0.2,
+      "signed_retraining_delta_pp": 0.04,
+      "abs_retraining_delta_pp": 0.04,
+      "monotonic": false,
+      "gradient": [
+        {
+          "threshold": 0.3,
+          "n_retained": 5841,
+          "retention_pct": 98.0,
+          "pos_retained": 552,
+          "mAP": 0.6562,
+          "AUC": 0.8795
+        },
+        {
+          "threshold": 0.4,
+          "n_retained": 5889,
+          "retention_pct": 98.8,
+          "pos_retained": 557,
+          "mAP": 0.6525,
+          "AUC": 0.8783
+        },
+        {
+          "threshold": 0.5,
+          "n_retained": 5906,
+          "retention_pct": 99.0,
+          "pos_retained": 558,
+          "mAP": 0.6534,
+          "AUC": 0.8786
+        },
+        {
+          "threshold": 0.6,
+          "n_retained": 5930,
+          "retention_pct": 99.4,
+          "pos_retained": 562,
+          "mAP": 0.6548,
+          "AUC": 0.879
+        },
+        {
+          "threshold": 0.7,
+          "n_retained": 5953,
+          "retention_pct": 99.8,
+          "pos_retained": 564,
+          "mAP": 0.6545,
+          "AUC": 0.8793
+        },
+        {
+          "threshold": 0.8,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 565,
+          "mAP": 0.6542,
+          "AUC": 0.8794
+        },
+        {
+          "threshold": 0.9,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 565,
+          "mAP": 0.6542,
+          "AUC": 0.8794
+        },
+        {
+          "threshold": 1.0,
+          "n_retained": 5963,
+          "retention_pct": 100.0,
+          "pos_retained": 565,
+          "mAP": 0.6542,
+          "AUC": 0.8794
+        }
+      ]
+    }
+  },
+  "bridge_summary": {
+    "pearson_abs": 0.6427,
+    "spearman_abs": 0.1,
+    "pearson_signed": -0.7714,
+    "spearman_signed": -0.6,
+    "n_tasks": 5
+  }
+}

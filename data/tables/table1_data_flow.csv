@@ -1,0 +1,10 @@
+Stage,Count,Role in this study
+Raw records aggregated from 13 accessible sources,"97,611",Scope of local source tracing and cleaning
+Cleaned unique sequences before ESM-2 tokenizer exclusion,"60,419",Input scope for sequence validity and exact UniRef50-match audit
+Standard-amino-acid sequences with ESM-2 embeddings,"59,345",Main feature matrix for model training and analysis
+Sequences with ambiguous residues excluded from embeddings,"1,074",Removed because the ESM-2 tokenizer does not accept X/Z/B/J
+ESCAPE fold-mapped subset,"38,884",Fixed benchmark split retained from ESCAPE
+Train/validation/test folds,"15,588 / 15,534 / 7,762",Main antibacterial model development and evaluation
+Antibacterial-positive test sequences,520,Primary positive class for interpretable curves and HCS analysis
+Jaccard-0.40 retraining test fold,"3,974",Clean test set used only for de novo retraining experiments
+30% / 100% profile retained test subsets,"3,960 / 7,720",Nested retained subsets used for the main performance-similarity profile span

@@ -1,0 +1,66 @@
+{
+  "manuscript_title": "Post hoc train-neighbor similarity auditing for biomedical protein sequence benchmarks",
+  "figure1": {
+    "thresholds_pct": [
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "map_pct": [
+      76.72,
+      80.36,
+      82.2,
+      84.38,
+      85.84,
+      87.19,
+      88.09,
+      88.39
+    ],
+    "auc_pct": [
+      96.79,
+      97.37,
+      97.7,
+      97.99,
+      98.18,
+      98.35,
+      98.43,
+      98.51
+    ],
+    "endpoint_span_pp": 11.67
+  },
+  "figure2": {
+    "datasets": [
+      "ESCAPE_ESM2",
+      "DRAMP_antibacterial",
+      "APD6",
+      "DBAASP"
+    ],
+    "endpoint_spans_pp": [
+      11.7,
+      2.833333333333333,
+      2.066666666666667,
+      1.8
+    ],
+    "neighbor_removal_delta_pp": [
+      12.1,
+      0.1066666666666666,
+      1.47,
+      -0.1366666666666666
+    ]
+  },
+  "figure3": {
+    "candidate_pool_size": 4536,
+    "audited_pool_size": 3880,
+    "audit_threshold": 0.4,
+    "top20_overlap": 16,
+    "raw_median_score": 0.99435272,
+    "audited_median_score": 0.99427756,
+    "raw_median_jaccard": 0.18350168,
+    "audited_median_jaccard": 0.11442006
+  }
+}

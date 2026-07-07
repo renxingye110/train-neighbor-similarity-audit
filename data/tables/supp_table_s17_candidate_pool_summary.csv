@@ -1,0 +1,9 @@
+Metric,Raw Top 20,Audited Top 20
+Unique candidate-pool size,"4,536","4,536"
+Jaccard constraint,None,<0.40
+Overlap between lists,16/20,16/20
+High-similarity candidates,1/20,0/20
+Low-similarity candidates,16/20,20/20
+Median maximum Jaccard,0.184,0.114
+Median predicted score,0.994,0.994
+Source-tag memberships,DRAMP 17; APD6 12; DBAASP 0,DRAMP 16; APD6 11; DBAASP 0

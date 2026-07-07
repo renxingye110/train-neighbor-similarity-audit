@@ -1,0 +1,79 @@
+{
+  "base_bridge_no_controlled": {
+    "label": "base_bridge_no_controlled",
+    "n": 11,
+    "pearson": 0.963,
+    "pearson_ci95": [
+      0.901,
+      0.9934
+    ],
+    "pearson_bootstrap_valid": 10000,
+    "pearson_perm_p": 0.0001,
+    "pearson_perm_valid": 20000,
+    "spearman": 0.9545,
+    "spearman_ci95": [
+      0.7545,
+      1.0
+    ],
+    "spearman_bootstrap_valid": 10000,
+    "spearman_perm_p": 5e-05,
+    "spearman_perm_valid": 20000
+  },
+  "base_plus_deeploc_bridge_no_controlled": {
+    "label": "base_plus_deeploc_bridge_no_controlled",
+    "n": 16,
+    "pearson": 0.9691,
+    "pearson_ci95": [
+      0.9515,
+      0.9899
+    ],
+    "pearson_bootstrap_valid": 10000,
+    "pearson_perm_p": 5e-05,
+    "pearson_perm_valid": 20000,
+    "spearman": 0.8971,
+    "spearman_ci95": [
+      0.6293,
+      0.9853
+    ],
+    "spearman_bootstrap_valid": 10000,
+    "spearman_perm_p": 5e-05,
+    "spearman_perm_valid": 20000
+  },
+  "deeploc_rows": [
+    {
+      "case_id": "DEEPLR_Cytoplasm",
+      "family": "DeepLoc 2.0",
+      "task": "Cytoplasm",
+      "span": 0.4,
+      "delta": 0.03
+    },
+    {
+      "case_id": "DEEPLR_Nucleus",
+      "family": "DeepLoc 2.0",
+      "task": "Nucleus",
+      "span": -0.1,
+      "delta": 0.09
+    },
+    {
+      "case_id": "DEEPLR_Extracellular",
+      "family": "DeepLoc 2.0",
+      "task": "Extracellular",
+      "span": -0.5,
+      "delta": 0.92
+    },
+    {
+      "case_id": "DEEPLR_Cell_membrane",
+      "family": "DeepLoc 2.0",
+      "task": "Cell membrane",
+      "span": -0.1,
+      "delta": 0.2
+    },
+    {
+      "case_id": "DEEPLR_Mitochondrion",
+      "family": "DeepLoc 2.0",
+      "task": "Mitochondrion",
+      "span": -0.2,
+      "delta": 0.04
+    }
+  ]
+}

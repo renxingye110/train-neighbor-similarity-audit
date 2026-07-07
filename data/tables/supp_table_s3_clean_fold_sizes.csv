@@ -1,0 +1,5 @@
+Split,Original size,Jaccard-0.40 clean size,Retention
+Training (fold 1),"15,588","11,536",74.0%
+Validation (fold 2),"15,534","9,265",59.6%
+Test,"7,762","3,974",51.2%
+Total,"38,884","24,775",63.7%

@@ -1,0 +1,7 @@
+list_name,similarity_class,count
+Raw top 20,low,16
+Raw top 20,medium,3
+Raw top 20,high,1
+Audited top 20,low,20
+Audited top 20,medium,0
+Audited top 20,high,0

@@ -1,0 +1,7 @@
+List,Similarity class,Count
+Raw Top 20,low (<0.40),16
+Raw Top 20,medium (0.40-0.60),3
+Raw Top 20,high (>=0.60),1
+Audited Top 20,low (<0.40),20
+Audited Top 20,medium (0.40-0.60),0
+Audited Top 20,high (>=0.60),0

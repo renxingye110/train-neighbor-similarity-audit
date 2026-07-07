@@ -1,0 +1,9 @@
+rank,type,source,sequence,short_sequence,predicted_score,max_train_jaccard,similarity_class,nearest_train_sequence,nearest_train_source,nearest_train_label,interpretation
+1,Raw-only,APD6;DRAMP_antibacterial,RFRLPFRRPPIRIHPPPFYPPFRRFL,RFRLPFRRPPIRIHPPPF...,0.99452966,0.875,high,RFRLPFRRPPIRIHPPPFYPPFRRFLGRR,ESCAPE fold 1,1,training-neighbor-supported candidate
+2,Raw-only,DRAMP_antibacterial,WRVRWRVRWRVR,WRVRWRVRWRVR,0.99444324,0.42857143,medium,VRWRRRWRV,ESCAPE fold 1,1,training-neighbor-supported candidate
+3,Raw-only,APD6;DRAMP_antibacterial,RWCVYAYVRIRGVLVRYRRCW,RWCVYAYVRIRGVLVRYR...,0.99420542,0.40740741,medium,RWAVYAYVRVRGVLVRYRRAW,ESCAPE fold 1,1,training-neighbor-supported candidate
+4,Raw-only,APD6;DRAMP_antibacterial,RWCVYAYVRVRGVLVRYRRCW,RWCVYAYVRVRGVLVRYR...,0.99410123,0.58333333,medium,RWAVYAYVRVRGVLVRYRRAW,ESCAPE fold 1,1,training-neighbor-supported candidate
+5,Audited-only,DRAMP_antibacterial,VRRFGWWWGFLRR,VRRFGWWWGFLRR,0.99401349,0.2173913,low,GGHVRRFPWWWPFLRRGGC,ESCAPE fold 1,1,lower-similarity candidate
+6,Audited-only,DRAMP_antibacterial,RWWKIWVIRWWR,RWWKIWVIRWWR,0.99400687,0.18181818,low,RWWRLF,ESCAPE fold 1,1,lower-similarity candidate
+7,Audited-only,APD6,QPFIPRPIDTCRLRNGICFPGICRRPYYWIGTCNNGIGSCCARGWRS,QPFIPRPIDTCRLRNGIC...,0.99400204,0.06329114,low,GAQCTAGPCCWPCEGTICRRARGDDLDDYCNGISADCPRNPYY,ESCAPE fold 1,0,lower-similarity candidate
+8,Audited-only,APD6;DRAMP_antibacterial,QGVRNHVTCRINRGFCVPIRCPGRTRQIGTCFGPRIKCCRSW,QGVRNHVTCRINRGFCVP...,0.9939813,0.07042254,low,DPVTCLKSGAICHPVFCPRRYKQIGTCGLPGTKCCKKP,ESCAPE fold 1,1,lower-similarity candidate
