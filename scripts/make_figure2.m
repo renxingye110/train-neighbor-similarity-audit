@@ -125,6 +125,4 @@ ax3.FontSize = 9; ax3.YLabel.FontSize = 10;
 lgd1.FontSize = 9;
 
 set(fig, 'PaperPositionMode', 'auto');
-savefig(fig, fullfile(outDir, 'Figure_2.fig'));
 exportgraphics(fig, fullfile(outDir, 'Figure_2.pdf'), 'ContentType', 'vector', 'BackgroundColor', 'white');
-exportgraphics(fig, fullfile(outDir, 'Figure_2.png'), 'Resolution', 600, 'BackgroundColor', 'white');

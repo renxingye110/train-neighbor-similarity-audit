@@ -67,6 +67,4 @@ inset.GridColor = [0.89 0.89 0.89];
 inset.GridAlpha = 0.20;
 
 set(fig, 'PaperPositionMode', 'auto');
-savefig(fig, fullfile(outDir, 'Figure_1.fig'));
 exportgraphics(fig, fullfile(outDir, 'Figure_1.pdf'), 'ContentType', 'vector', 'BackgroundColor', 'white');
-exportgraphics(fig, fullfile(outDir, 'Figure_1.png'), 'Resolution', 600, 'BackgroundColor', 'white');

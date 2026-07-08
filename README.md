@@ -2,7 +2,7 @@
 
 This repository accompanies the manuscript "Post hoc train-neighbor similarity auditing for biomedical protein sequence benchmarks."
 
-This repository is a compact reproducibility package rather than a full project dump. It includes the processed result tables, figure source data, machine-readable manuscript tables, plotting scripts, and summary outputs needed to inspect the reported results. It does not redistribute raw third-party database snapshots, large embedding arrays, checkpoint archives, or historical manuscript files.
+This repository is a compact reproducibility package rather than a full project dump. It includes the processed result tables, figure source data, machine-readable manuscript tables, plotting scripts, and summary outputs needed to inspect the reported results. It does not redistribute raw third-party database snapshots, large embedding arrays, checkpoint archives, historical manuscript files, or submission-only artwork assets.
 
 Archived release (Zenodo DOI): https://doi.org/10.5281/zenodo.21235886
 
@@ -82,7 +82,7 @@ Reproducing the figures from the included tables should take only a few minutes 
 - `data/tables/`: machine-readable CSV exports of the manuscript and supplementary tables included in this release
 - `scripts/`: a generic Jaccard-profile CLI, summary scripts for the source-held-out and retrospective prioritization analyses, and MATLAB figure scripts
 - `results/`: summary JSON exports, current-manuscript extension summaries, and file checksums
-- `figures/`: final exported figures and graphical abstract PDF
+- `figures/`: final exported main figures
 
 More detail is provided in `docs/repository_guide.md`.
 

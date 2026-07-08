@@ -108,6 +108,4 @@ lgd2.Position(2) = axLegend2.Position(2) + 0.002;
 lgd2.Position(3) = axLegend2.Position(3) - 0.01;
 
 set(fig, 'PaperPositionMode', 'auto');
-savefig(fig, fullfile(outDir, 'Figure_3.fig'));
 exportgraphics(fig, fullfile(outDir, 'Figure_3.pdf'), 'ContentType', 'vector', 'BackgroundColor', 'white');
-exportgraphics(fig, fullfile(outDir, 'Figure_3.png'), 'Resolution', 600, 'BackgroundColor', 'white');
