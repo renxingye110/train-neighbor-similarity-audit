@@ -9,6 +9,8 @@ The reported analyses draw on several public data sources. We do not redistribut
 - DRAMP / DRAMP_antibacterial
 - DBAASP
 - DeepLoc 2.0 benchmark
+- TAPE fluorescence
+- TAPE remote homology
 - AMPCliff benchmark from Li et al.
 - LL-37 truncation data from the published experimental source cited in the supplement
 
@@ -17,8 +19,10 @@ The reported analyses draw on several public data sources. We do not redistribut
 - ChEMBL
 - DRAVP
 - CancerPPD
+- SATPdb
 - DRAMP activity-specific subsets
 - Human-fragment negatives assembled locally for preprocessing
+- CAMPR4 and dbAMP are cited as related public AMP resources in the manuscript, but this repository does not represent them as confirmed direct local input sources for the reported result tables.
 
 ## Redistribution policy in this repository
 

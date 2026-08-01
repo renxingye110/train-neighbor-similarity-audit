@@ -295,8 +295,8 @@
       "mAP_sd": 0.0,
       "AUC_mean": 0.9679,
       "AUC_sd": 0.0,
-      "clean_mAP_mean": NaN,
-      "clean_mAP_sd": NaN,
+      "clean_mAP_mean": null,
+      "clean_mAP_sd": null,
       "retention_mean": 51.0,
       "retention_sd": 0.0
     },
@@ -307,8 +307,8 @@
       "mAP_sd": 0.0,
       "AUC_mean": 0.9737,
       "AUC_sd": 0.0,
-      "clean_mAP_mean": NaN,
-      "clean_mAP_sd": NaN,
+      "clean_mAP_mean": null,
+      "clean_mAP_sd": null,
       "retention_mean": 59.5,
       "retention_sd": 0.0
     },
@@ -319,8 +319,8 @@
       "mAP_sd": 0.0,
       "AUC_mean": 0.977,
       "AUC_sd": 0.0,
-      "clean_mAP_mean": NaN,
-      "clean_mAP_sd": NaN,
+      "clean_mAP_mean": null,
+      "clean_mAP_sd": null,
       "retention_mean": 66.9,
       "retention_sd": 0.0
     },
@@ -331,8 +331,8 @@
       "mAP_sd": 0.0,
       "AUC_mean": 0.9799,
       "AUC_sd": 0.0,
-      "clean_mAP_mean": NaN,
-      "clean_mAP_sd": NaN,
+      "clean_mAP_mean": null,
+      "clean_mAP_sd": null,
       "retention_mean": 74.5,
       "retention_sd": 0.0
     },
@@ -343,8 +343,8 @@
       "mAP_sd": 0.0,
       "AUC_mean": 0.9818,
       "AUC_sd": 0.0,
-      "clean_mAP_mean": NaN,
-      "clean_mAP_sd": NaN,
+      "clean_mAP_mean": null,
+      "clean_mAP_sd": null,
       "retention_mean": 81.0,
       "retention_sd": 0.0
     },
@@ -355,8 +355,8 @@
       "mAP_sd": 0.0,
       "AUC_mean": 0.9835,
       "AUC_sd": 0.0,
-      "clean_mAP_mean": NaN,
-      "clean_mAP_sd": NaN,
+      "clean_mAP_mean": null,
+      "clean_mAP_sd": null,
       "retention_mean": 87.8,
       "retention_sd": 0.0
     },
@@ -367,8 +367,8 @@
       "mAP_sd": 0.0,
       "AUC_mean": 0.9843,
       "AUC_sd": 0.0,
-      "clean_mAP_mean": NaN,
-      "clean_mAP_sd": NaN,
+      "clean_mAP_mean": null,
+      "clean_mAP_sd": null,
       "retention_mean": 94.7,
       "retention_sd": 0.0
     },
@@ -379,8 +379,8 @@
       "mAP_sd": 0.0,
       "AUC_mean": 0.9851,
       "AUC_sd": 0.0,
-      "clean_mAP_mean": NaN,
-      "clean_mAP_sd": NaN,
+      "clean_mAP_mean": null,
+      "clean_mAP_sd": null,
       "retention_mean": 99.5,
       "retention_sd": 0.0
     }
