@@ -1,4 +1,4 @@
-function apply_jbi_artwork_style(fig)
+function apply_cbc_artwork_style(fig)
 fontName = 'Arial';
 tickSize = 9;
 labelSize = 10;

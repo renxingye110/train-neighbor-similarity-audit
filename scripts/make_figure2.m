@@ -118,7 +118,7 @@ ax3.TickLabelInterpreter = 'none';
 grid(ax3, 'on');
 text(ax3, -0.06, 0.98, 'C', 'Units', 'normalized', 'VerticalAlignment', 'top', 'HorizontalAlignment', 'left', 'Clipping', 'off');
 
-apply_jbi_artwork_style(fig);
+apply_cbc_artwork_style(fig);
 ax1.FontSize = 9; ax1.XLabel.FontSize = 10; ax1.YLabel.FontSize = 10;
 ax2.FontSize = 9; ax2.YLabel.FontSize = 10;
 ax3.FontSize = 9; ax3.YLabel.FontSize = 10;

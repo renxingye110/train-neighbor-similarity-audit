@@ -1,6 +1,6 @@
 # Current manuscript extensions
 
-This note lists the additional packaged summaries that support the current JBI manuscript beyond the original Figure 1-3 release set.
+This note lists the additional packaged summaries that support the current Computational Biology and Chemistry manuscript beyond the original Figure 1-3 release set.
 
 These files are intentionally lightweight. They document the reported extension analyses without turning this repository into a full retraining dump.
 

@@ -1,4 +1,4 @@
-source,sequence,predicted_score,max_train_jaccard,similarity_class,is_raw_top20,is_audited_top20,membership,nearest_train_sequence,nearest_train_source,nearest_train_label,interpretation
+source,sequence,predicted_score,max_train_jaccard,similarity_class,is_raw_top20,is_constrained_top20,membership,nearest_train_sequence,nearest_train_source,nearest_train_label,interpretation
 DRAMP_antibacterial,RRWRIVVIRVRR,0.99514008,0.23076923,low,1,1,shared,IRWRRRWRI,ESCAPE fold 1,1.0,lower-similarity candidate
 DRAMP_antibacterial,RRIIIRWRRI,0.99496561,0.375,low,1,1,shared,IIRRIIRRIIRRIIRR,ESCAPE fold 1,1.0,lower-similarity candidate
 DRAMP_antibacterial,IRRRIRLIVRRQI,0.99463415,0.2,low,1,1,shared,RIRIRRRFIRIR,ESCAPE fold 1,1.0,lower-similarity candidate

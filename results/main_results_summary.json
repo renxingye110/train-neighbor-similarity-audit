@@ -1,5 +1,5 @@
 {
-  "manuscript_title": "Post hoc train-neighbor similarity auditing for biomedical protein sequence benchmarks",
+  "manuscript_title": "Train-neighbor profiles for similarity-resolved evaluation of fixed protein sequence benchmarks",
   "figure1": {
     "thresholds_pct": [
       30,
@@ -55,12 +55,12 @@
   },
   "figure3": {
     "candidate_pool_size": 4536,
-    "audited_pool_size": 3880,
-    "audit_threshold": 0.4,
+    "constrained_pool_size": 3880,
+    "jaccard_threshold": 0.4,
     "top20_overlap": 16,
     "raw_median_score": 0.99435272,
-    "audited_median_score": 0.99427756,
+    "constrained_median_score": 0.99427756,
     "raw_median_jaccard": 0.18350168,
-    "audited_median_jaccard": 0.11442006
+    "constrained_median_jaccard": 0.11442006
   }
 }

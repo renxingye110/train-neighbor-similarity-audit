@@ -6,7 +6,7 @@ This note maps the main manuscript display items and supplementary tables to the
 
 - Figure 1 -> `data/figure_source/figure1_threshold_profile.csv`, `data/figure_source/figure1_auc_profile.csv`, `scripts/make_figure1.m`
 - Figure 2 -> `data/figure_source/figure2_source_heldout_profiles.csv`, `data/figure_source/figure2_endpoint_spans.csv`, `data/figure_source/figure2_retraining_changes.csv`, `scripts/make_figure2.m`
-- Figure 3 -> `data/figure_source/figure3_unique_candidate_pool_summary.csv`, `data/figure_source/figure3_candidate_pool_points.csv`, `data/figure_source/figure3_raw_top20.csv`, `data/figure_source/figure3_audited_top20.csv`, `data/figure_source/figure3_similarity_composition.csv`, `scripts/make_figure3.m`
+- Figure 3 -> `data/figure_source/figure3_unique_candidate_pool_summary.csv`, `data/figure_source/figure3_candidate_pool_points.csv`, `data/figure_source/figure3_raw_top20.csv`, `data/figure_source/figure3_constrained_top20.csv`, `data/figure_source/figure3_similarity_composition.csv`, `scripts/make_figure3.m`
 
 ## Main manuscript tables
 

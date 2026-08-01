@@ -10,8 +10,8 @@
 - `figure3_unique_candidate_pool_summary.csv`: candidate-pool summary for the retrospective prioritization example.
 - `figure3_candidate_pool_points.csv`: full unique-sequence candidate pool used for the Figure 3 scatter panel.
 - `figure3_raw_top20.csv`: the raw Top 20 candidate list before the Jaccard constraint.
-- `figure3_audited_top20.csv`: the Top 20 candidate list after the Jaccard constraint.
-- `figure3_similarity_composition.csv`: low/medium/high similarity counts for the raw and audited Top 20 lists.
+- `figure3_constrained_top20.csv`: the Top 20 candidate list after applying the Jaccard constraint.
+- `figure3_similarity_composition.csv`: low/medium/high similarity counts for the raw and similarity-constrained Top 20 lists.
 - `figure3_replaced_candidates.csv`: representative candidates whose Top-20 membership changed.
 
 ## Table exports

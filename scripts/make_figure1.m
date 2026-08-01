@@ -54,7 +54,7 @@ inset.XTick = [30 60 100];
 inset.YTick = [96.5 97.5 98.5];
 ylabel(inset, 'AUC (%)');
 
-apply_jbi_artwork_style(fig);
+apply_cbc_artwork_style(fig);
 ax.FontSize = 9;
 ax.XLabel.FontSize = 10;
 ax.YLabel.FontSize = 10;

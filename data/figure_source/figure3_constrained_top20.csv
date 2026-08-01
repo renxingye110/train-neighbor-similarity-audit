@@ -1,4 +1,4 @@
-source,sequence,predicted_score,max_train_jaccard,similarity_class,is_raw_top20,is_audited_top20,membership,nearest_train_sequence,nearest_train_source,nearest_train_label,interpretation
+source,sequence,predicted_score,max_train_jaccard,similarity_class,is_raw_top20,is_constrained_top20,membership,nearest_train_sequence,nearest_train_source,nearest_train_label,interpretation
 DRAMP_antibacterial,RRWRIVVIRVRR,0.99514008,0.23076923,low,1,1,shared,IRWRRRWRI,ESCAPE fold 1,1.0,lower-similarity candidate
 DRAMP_antibacterial,RRIIIRWRRI,0.99496561,0.375,low,1,1,shared,IIRRIIRRIIRRIIRR,ESCAPE fold 1,1.0,lower-similarity candidate
 DRAMP_antibacterial,IRRRIRLIVRRQI,0.99463415,0.2,low,1,1,shared,RIRIRRRFIRIR,ESCAPE fold 1,1.0,lower-similarity candidate
@@ -15,7 +15,7 @@ APD6;DRAMP_antibacterial,QGVRNFVTCRINRGFCVPIRCPGHRRQIGTCLGPRIKCCR,0.99413824,0.0
 APD6;DRAMP_antibacterial,VRNFVTCRINRGFCVPIRCPGHRRQIGTCLGPQIKCCR,0.9941327,0.09090909,low,1,1,shared,DPVTCLKSGAICHPVFCPRRYKQIGTCGLPGTKCCKKP,ESCAPE fold 1,1.0,lower-similarity candidate
 APD6;DRAMP_antibacterial,VRNHVTCRINRGFCVPIRCPGRTRQIGTCFGPRIKCCRSW,0.99406588,0.07246377,low,1,1,shared,DPVTCLKSGAICHPVFCPRRYKQIGTCGLPGTKCCKKP,ESCAPE fold 1,1.0,lower-similarity candidate
 APD6;DRAMP_antibacterial,QGVRNFVTCRINRGFCVPIRCPGHRRQIGTCLAPQIKCCR,0.99406248,0.08823529,low,1,1,shared,DPVTCLKSGAICHPVFCPRRYKQIGTCGLPGTKCCKKP,ESCAPE fold 1,1.0,lower-similarity candidate
-DRAMP_antibacterial,VRRFGWWWGFLRR,0.99401349,0.2173913,low,0,1,audited_only,GGHVRRFPWWWPFLRRGGC,ESCAPE fold 1,1.0,lower-similarity candidate
-DRAMP_antibacterial,RWWKIWVIRWWR,0.99400687,0.18181818,low,0,1,audited_only,RWWRLF,ESCAPE fold 1,1.0,lower-similarity candidate
-APD6,QPFIPRPIDTCRLRNGICFPGICRRPYYWIGTCNNGIGSCCARGWRS,0.99400204,0.06329114,low,0,1,audited_only,GAQCTAGPCCWPCEGTICRRARGDDLDDYCNGISADCPRNPYY,ESCAPE fold 1,0.0,lower-similarity candidate
-APD6;DRAMP_antibacterial,QGVRNHVTCRINRGFCVPIRCPGRTRQIGTCFGPRIKCCRSW,0.9939813,0.07042254,low,0,1,audited_only,DPVTCLKSGAICHPVFCPRRYKQIGTCGLPGTKCCKKP,ESCAPE fold 1,1.0,lower-similarity candidate
+DRAMP_antibacterial,VRRFGWWWGFLRR,0.99401349,0.2173913,low,0,1,constrained_only,GGHVRRFPWWWPFLRRGGC,ESCAPE fold 1,1.0,lower-similarity candidate
+DRAMP_antibacterial,RWWKIWVIRWWR,0.99400687,0.18181818,low,0,1,constrained_only,RWWRLF,ESCAPE fold 1,1.0,lower-similarity candidate
+APD6,QPFIPRPIDTCRLRNGICFPGICRRPYYWIGTCNNGIGSCCARGWRS,0.99400204,0.06329114,low,0,1,constrained_only,GAQCTAGPCCWPCEGTICRRARGDDLDDYCNGISADCPRNPYY,ESCAPE fold 1,0.0,lower-similarity candidate
+APD6;DRAMP_antibacterial,QGVRNHVTCRINRGFCVPIRCPGRTRQIGTCFGPRIKCCRSW,0.9939813,0.07042254,low,0,1,constrained_only,DPVTCLKSGAICHPVFCPRRYKQIGTCGLPGTKCCKKP,ESCAPE fold 1,1.0,lower-similarity candidate

@@ -1,6 +1,6 @@
-# Post hoc train-neighbor similarity auditing for biomedical protein sequence benchmarks
+# Reproducibility package for train-neighbor similarity-resolved evaluation of protein sequence benchmarks
 
-This repository accompanies the manuscript "Post hoc train-neighbor similarity auditing for biomedical protein sequence benchmarks."
+This repository accompanies the manuscript "Train-neighbor profiles for similarity-resolved evaluation of fixed protein sequence benchmarks."
 
 This repository is a compact reproducibility package rather than a full project dump. It includes the processed result tables, figure source data, machine-readable manuscript tables, plotting scripts, and summary outputs needed to inspect the reported results. It does not redistribute raw third-party database snapshots, large embedding arrays, checkpoint archives, historical manuscript files, or submission-only artwork assets.
 
@@ -13,13 +13,13 @@ Archived release (Zenodo DOI): https://doi.org/10.5281/zenodo.21235886
 - Package lightweight JSON summaries for the bridge analyses, multilabel extensions, independent-benchmark checks, and controlled simulation discussed in the current manuscript.
 - Document which public data sources were reused and why raw source records are not redistributed here.
 
-This is not an AMP discovery release. The Figure 3 example is a retrospective prioritization exercise that shows how a similarity constraint can change a fixed candidate ranking.
+This is not an AMP discovery release. The Figure 3 example is a retrospective train-neighbor-aware reranking exercise that shows how a similarity constraint can change a fixed ranked list of already annotated antibacterial-positive peptides.
 
 ## Citation
 
 If you use this repository, please cite the Zenodo record:
 
-Ren X. Reproducibility materials for post hoc train-neighbor similarity auditing of biomedical protein sequence benchmarks. Zenodo. 2026. doi: 10.5281/zenodo.21235886
+Ren X. Reproducibility materials for train-neighbor similarity-resolved evaluation of fixed protein sequence benchmarks. Zenodo. 2026. doi: 10.5281/zenodo.21235886
 
 ## Start here
 

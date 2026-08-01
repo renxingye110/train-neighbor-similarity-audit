@@ -1,4 +1,4 @@
-Metric,Raw Top 20,Audited Top 20
+Metric,Raw Top 20,Constrained Top 20
 Unique candidate-pool size,"4,536","4,536"
 Jaccard constraint,None,<0.40
 Overlap between lists,16/20,16/20
