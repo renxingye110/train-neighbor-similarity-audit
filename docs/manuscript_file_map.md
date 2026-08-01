@@ -11,9 +11,10 @@ This note maps the main manuscript display items and supplementary tables to the
 ## Main manuscript tables
 
 - Table 1 -> `data/tables/table1_data_flow.csv`
-- Table 2 -> `data/tables/table2_ablation_clean_retraining.csv`
-- Table 3 -> `data/tables/table3_threshold_retained_subset.csv`
+- Table 2 -> `data/tables/table2_threshold_retained_subset.csv`
+- Table 3 -> `data/tables/table3_ablation_clean_retraining.csv`
 - Table 4 -> `data/tables/table4_prevalence_matched_ap.csv`
+- Table 5 -> `data/tables/table5_response_regimes.csv`
 
 ## Supplementary tables
 

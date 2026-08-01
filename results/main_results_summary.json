@@ -46,12 +46,11 @@
       2.066666666666667,
       1.8
     ],
-    "neighbor_removal_delta_pp": [
-      12.1,
-      0.1066666666666666,
-      1.47,
-      -0.1366666666666666
-    ]
+    "source_heldout_matched_intervention_delta_pp": {
+      "DRAMP_antibacterial": 0.1066666666666666,
+      "APD6": 1.47,
+      "DBAASP": -0.1366666666666666
+    }
   },
   "figure3": {
     "candidate_pool_size": 4536,
@@ -62,5 +61,10 @@
     "constrained_median_score": 0.99427756,
     "raw_median_jaccard": 0.18350168,
     "constrained_median_jaccard": 0.11442006
+  },
+  "table3_clean_fold_reference": {
+    "dataset": "ESCAPE Configuration B",
+    "clean_fold_delta_pp": -11.48,
+    "protocol": "Jaccard-0.40 clean-fold retraining"
   }
 }

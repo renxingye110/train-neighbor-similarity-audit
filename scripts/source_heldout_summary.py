@@ -18,7 +18,7 @@ def main() -> None:
     payload = {
         "curve_rows": curves.to_dict(orient="records"),
         "endpoint_summary": summary.to_dict(orient="records"),
-        "neighbor_removal_summary": retraining.to_dict(orient="records"),
+        "source_heldout_intervention_summary": retraining.to_dict(orient="records"),
     }
     OUT.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     print("Wrote", OUT)

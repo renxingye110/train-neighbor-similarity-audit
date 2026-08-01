@@ -1,4 +1,4 @@
-source,seed,n_train,n_test,n_test_pos,full_mAP,full_auc,span_pp,mAP_30,mAP_100,pct_jaccard_ge_40,n_removed,clean_mAP,clean_span_pp,mAP_drop_pp
+source,seed,n_train,n_test,n_test_pos,full_mAP,full_auc,span_pp,mAP_30,mAP_100,pct_jaccard_ge_40,n_removed,clean_mAP,clean_span_pp,mAP_change_pp
 DRAMP_antibacterial,7,43757,15588,3897,0.9159,0.9584,3.4,0.882,0.9159,51.2,15411,0.9098,3.2,0.61
 DRAMP_antibacterial,42,43757,15588,3897,0.8959,0.9478,2.5,0.8712,0.8963,50.7,15197,0.8975,2.6,-0.16
 DRAMP_antibacterial,123,43757,15588,3897,0.9002,0.9516,2.6,0.8745,0.9004,51.0,15240,0.9016,2.4,-0.13

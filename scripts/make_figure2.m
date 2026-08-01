@@ -12,6 +12,8 @@ retraining = readtable(fullfile(dataDir, 'figure2_retraining_changes.csv'), 'Tex
 
 datasets = ["ESCAPE_ESM2", "DRAMP_antibacterial", "APD6", "DBAASP"];
 shortLabels = ["ESCAPE", "DRAMP", "APD6", "DBAASP"];
+interventionDatasets = ["DRAMP_antibacterial", "APD6", "DBAASP"];
+interventionLabels = ["DRAMP", "APD6", "DBAASP"];
 colors = [
     0.11 0.39 0.70
     0.02 0.46 0.40
@@ -83,21 +85,22 @@ text(ax2, 0.03, 0.96, 'B', 'Units', 'normalized', 'VerticalAlignment', 'top');
 
 ax3 = nexttile(layout);
 hold(ax3, 'on');
-drop = zeros(numel(datasets), 1);
-dropSd = zeros(numel(datasets), 1);
-for i = 1:numel(datasets)
-    row = retraining(retraining.dataset == datasets(i), :);
-    drop(i) = row.mAP_drop_pp_mean;
-    dropSd(i) = row.mAP_drop_pp_sd;
+drop = zeros(numel(interventionDatasets), 1);
+dropSd = zeros(numel(interventionDatasets), 1);
+for i = 1:numel(interventionDatasets)
+    row = retraining(retraining.dataset == interventionDatasets(i), :);
+    drop(i) = row.mAP_change_pp_mean;
+    dropSd(i) = row.mAP_change_pp_sd;
 end
 b3 = bar(ax3, drop, 0.60, 'FaceColor', 'flat', 'EdgeColor', [0.18 0.18 0.18], 'LineWidth', 0.70);
-for i = 1:numel(datasets)
-    b3.CData(i, :) = colors(i, :);
+for i = 1:numel(interventionDatasets)
+    colorIdx = find(datasets == interventionDatasets(i), 1);
+    b3.CData(i, :) = colors(colorIdx, :);
 end
-errorbar(ax3, 1:numel(datasets), drop, dropSd, 'k.', 'LineWidth', 0.85, 'CapSize', 3);
+errorbar(ax3, 1:numel(interventionDatasets), drop, dropSd, 'k.', 'LineWidth', 0.85, 'CapSize', 3);
 yline(ax3, 0, '-', 'Color', [0.45 0.45 0.45], 'LineWidth', 0.80);
-for i = 1:numel(datasets)
-    xPos = i + (i == 1) * 0.06;
+for i = 1:numel(interventionDatasets)
+    xPos = i;
     if drop(i) >= 0
         yVal = drop(i) + dropSd(i) + 0.42;
         va = 'bottom';
@@ -109,11 +112,11 @@ for i = 1:numel(datasets)
         'HorizontalAlignment', 'center', 'VerticalAlignment', va, ...
         'FontSize', 9.0, 'FontWeight', 'bold', 'Color', [0.08 0.08 0.08]);
 end
-set(ax3, 'XTick', 1:numel(datasets), 'XTickLabel', cellstr(shortLabels));
+set(ax3, 'XTick', 1:numel(interventionDatasets), 'XTickLabel', cellstr(interventionLabels));
 xtickangle(ax3, 16);
 ylabel(ax3, 'mAP change after removal (pp)');
-ax3.YLim = [-2.4 14.2];
-ax3.XLim = [0.42 4.58];
+ax3.YLim = [-1.2 2.4];
+ax3.XLim = [0.42 3.58];
 ax3.TickLabelInterpreter = 'none';
 grid(ax3, 'on');
 text(ax3, -0.06, 0.98, 'C', 'Units', 'normalized', 'VerticalAlignment', 'top', 'HorizontalAlignment', 'left', 'Clipping', 'off');
