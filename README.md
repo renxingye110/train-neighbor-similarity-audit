@@ -4,7 +4,7 @@ This repository accompanies the manuscript "Similarity-stratified retraining sen
 
 This repository is a compact reproducibility package rather than a full project dump. It includes the processed result tables, figure source data, machine-readable manuscript tables, plotting scripts, and summary outputs needed to inspect the reported results. It does not redistribute raw third-party database snapshots, large embedding arrays, checkpoint archives, historical manuscript files, or submission-only artwork assets.
 
-Current Zenodo release (v2.0.0): https://doi.org/10.5281/zenodo.22921583
+Current Zenodo concept DOI (latest version): https://doi.org/10.5281/zenodo.20842728
 
 ## Repository purpose
 
@@ -19,7 +19,7 @@ This is not an AMP discovery release. The primary validation compares a fixed ES
 
 If you use this repository, please cite the Zenodo record:
 
-Ren X. Reproducibility materials for similarity-stratified retraining sensitivity in fixed protein-sequence benchmarks. Zenodo. 2026. doi: 10.5281/zenodo.22921583
+Ren X. Reproducibility materials for similarity-stratified retraining sensitivity in fixed protein-sequence benchmarks. Zenodo. 2026. doi: 10.5281/zenodo.20842728
 
 ## Start here
 

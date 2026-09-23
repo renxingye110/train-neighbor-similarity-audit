@@ -6,8 +6,8 @@ authors:
   - family-names: "Ren"
     given-names: "Xingye"
     orcid: "https://orcid.org/0009-0000-0152-8622"
-version: 2.0.0
-doi: 10.5281/zenodo.22921583
+version: 2.1.0
+doi: 10.5281/zenodo.20842728
 license: MIT
 repository-code: "https://github.com/renxingye110/train-neighbor-similarity-audit"
 abstract: "Reproducibility package containing current main-figure source data, the complete eight-endpoint primary screen, Supplementary Tables S1-S5, summary outputs, and plotting scripts for similarity-stratified retraining sensitivity in fixed protein-sequence benchmarks."
