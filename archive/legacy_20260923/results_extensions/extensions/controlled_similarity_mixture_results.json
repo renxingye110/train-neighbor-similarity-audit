@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "script": "controlled_similarity_mixture_current.py",
+    "source": "results\\experiments\\depth_validation\\persample_similarity_error.json",
+    "thresholds": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "exposure_levels": [
+      0.1,
+      0.3,
+      0.5,
+      0.7,
+      0.9
+    ],
+    "reps": 400,
+    "total_n": 1200,
+    "pos_n": 80,
+    "neg_n": 1120,
+    "design": "fixed-size prevalence-matched mixtures of low-similarity and high-similarity ESCAPE test samples"
+  },
+  "levels": {
+    "0.1": {
+      "target_high_fraction": 0.1,
+      "mean_abs_span_pp": 4.424,
+      "mean_signed_span_pp": 4.424,
+      "mean_normalized_span": 0.0528,
+      "mean_mean_deficit_pp": 1.241,
+      "mean_auc_deficit_pp": 1.102,
+      "mean_full_map_100": 0.842,
+      "mean_jaccard": 0.2284,
+      "abs_span_ci95": [
+        1.426,
+        8.055
+      ],
+      "normalized_span_ci95": [
+        0.0171,
+        0.099
+      ],
+      "mean_maps": [
+        0.7978,
+        0.831,
+        0.831,
+        0.831,
+        0.831,
+        0.8362,
+        0.8404,
+        0.842
+      ],
+      "mean_retained_counts": [
+        925.3,
+        1080.0,
+        1080.0,
+        1080.0,
+        1080.0,
+        1123.4,
+        1166.8,
+        1197.1
+      ]
+    },
+    "0.3": {
+      "target_high_fraction": 0.3,
+      "mean_abs_span_pp": 6.885,
+      "mean_signed_span_pp": 6.885,
+      "mean_normalized_span": 0.0801,
+      "mean_mean_deficit_pp": 2.872,
+      "mean_auc_deficit_pp": 2.791,
+      "mean_full_map_100": 0.8638,
+      "mean_jaccard": 0.3629,
+      "abs_span_ci95": [
+        2.237,
+        12.249
+      ],
+      "normalized_span_ci95": [
+        0.0245,
+        0.1452
+      ],
+      "mean_maps": [
+        0.795,
+        0.829,
+        0.829,
+        0.829,
+        0.829,
+        0.8476,
+        0.8593,
+        0.8638
+      ],
+      "mean_retained_counts": [
+        719.6,
+        840.0,
+        840.0,
+        840.0,
+        840.0,
+        969.0,
+        1099.0,
+        1190.9
+      ]
+    },
+    "0.5": {
+      "target_high_fraction": 0.5,
+      "mean_abs_span_pp": 8.985,
+      "mean_signed_span_pp": 8.985,
+      "mean_normalized_span": 0.1013,
+      "mean_mean_deficit_pp": 4.398,
+      "mean_auc_deficit_pp": 4.385,
+      "mean_full_map_100": 0.8932,
+      "mean_jaccard": 0.4975,
+      "abs_span_ci95": [
+        2.037,
+        17.142
+      ],
+      "normalized_span_ci95": [
+        0.0224,
+        0.2026
+      ],
+      "mean_maps": [
+        0.8033,
+        0.8349,
+        0.8349,
+        0.8349,
+        0.8349,
+        0.8712,
+        0.8875,
+        0.8932
+      ],
+      "mean_retained_counts": [
+        513.8,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        816.0,
+        1032.4,
+        1184.9
+      ]
+    },
+    "0.7": {
+      "target_high_fraction": 0.7,
+      "mean_abs_span_pp": 11.893,
+      "mean_signed_span_pp": 11.891,
+      "mean_normalized_span": 0.1301,
+      "mean_mean_deficit_pp": 6.22,
+      "mean_auc_deficit_pp": 6.259,
+      "mean_full_map_100": 0.9191,
+      "mean_jaccard": 0.632,
+      "abs_span_ci95": [
+        2.419,
+        23.76
+      ],
+      "normalized_span_ci95": [
+        0.0254,
+        0.2666
+      ],
+      "mean_maps": [
+        0.8002,
+        0.8323,
+        0.8323,
+        0.8323,
+        0.8323,
+        0.8943,
+        0.913,
+        0.9191
+      ],
+      "mean_retained_counts": [
+        308.5,
+        360.0,
+        360.0,
+        360.0,
+        360.0,
+        661.8,
+        965.4,
+        1179.1
+      ]
+    },
+    "0.9": {
+      "target_high_fraction": 0.9,
+      "mean_abs_span_pp": 14.368,
+      "mean_signed_span_pp": 13.864,
+      "mean_normalized_span": 0.1523,
+      "mean_mean_deficit_pp": 7.715,
+      "mean_auc_deficit_pp": 7.79,
+      "mean_full_map_100": 0.9502,
+      "mean_jaccard": 0.7665,
+      "abs_span_ci95": [
+        0.749,
+        41.892
+      ],
+      "normalized_span_ci95": [
+        0.0078,
+        0.4502
+      ],
+      "mean_maps": [
+        0.8116,
+        0.8413,
+        0.8413,
+        0.8413,
+        0.8413,
+        0.9356,
+        0.9454,
+        0.9502
+      ],
+      "mean_retained_counts": [
+        103.2,
+        120.0,
+        120.0,
+        120.0,
+        120.0,
+        509.3,
+        898.9,
+        1173.3
+      ]
+    }
+  },
+  "summary": {
+    "monotonic_abs_span_by_exposure": true
+  }
+}

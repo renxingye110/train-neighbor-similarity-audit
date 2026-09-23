@@ -1,4 +1,0 @@
-dataset,clean_mAP_mean,clean_span_pp_mean,clean_span_pp_sd,mAP_change_pp_mean,mAP_change_pp_sd,protocol_note
-DRAMP_antibacterial,0.9029666666666668,2.7333333333333334,0.4163331998932266,0.1066666666666666,0.4361574639202376,source-held-out neighbor removal and retraining
-APD6,0.9264,2.8,0.7000000000000001,1.47,0.2951270912674741,source-held-out neighbor removal and retraining
-DBAASP,0.9313666666666668,1.7666666666666666,0.8020806277010644,-0.1366666666666666,0.4219399641339196,source-held-out neighbor removal and retraining

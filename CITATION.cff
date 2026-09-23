@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite the accompanying manuscript."
-title: "Reproducibility materials for train-neighbor similarity-resolved evaluation of fixed protein sequence benchmarks"
+title: "Reproducibility materials for similarity-stratified retraining sensitivity in fixed protein-sequence benchmarks"
 type: software
 authors:
   - family-names: "Ren"
@@ -10,10 +10,10 @@ version: 1.0.0
 doi: 10.5281/zenodo.21235886
 license: MIT
 repository-code: "https://github.com/renxingye110/train-neighbor-similarity-audit"
-abstract: "Reproducibility package containing figure source data, manuscript tables, summary outputs, and plotting scripts for train-neighbor similarity-resolved evaluation of fixed protein sequence benchmarks."
+abstract: "Reproducibility package containing current main-figure source data, the complete eight-endpoint primary screen, Supplementary Tables S1-S5, summary outputs, and plotting scripts for similarity-stratified retraining sensitivity in fixed protein-sequence benchmarks."
 keywords:
   - protein benchmark evaluation
   - protein sequence modeling
   - k-mer Jaccard similarity
-  - train-neighbor similarity
+  - retraining sensitivity
   - reproducibility package

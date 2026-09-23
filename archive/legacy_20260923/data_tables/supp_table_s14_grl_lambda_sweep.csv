@@ -1,0 +1,12 @@
+model,lambda,group,full_mAP,span_pp
+baseline,0,baseline,0.8923,14.8
+lambda_0.01,0.01,trainable,0.8772,14.7
+lambda_0.05,0.05,trainable,0.8799,14.7
+lambda_0.1,0.1,trainable,0.8879,13.7
+lambda_0.1_frozen,0.1,frozen,0.8871,15.5
+lambda_0.5,0.5,trainable,0.876,15.4
+lambda_1.0,1.0,trainable,0.879,14.1
+lambda_1.0_frozen,1.0,frozen,0.8795,17.2
+lambda_5.0,5.0,trainable,0.8814,15.0
+lambda_10.0,10.0,trainable,0.8851,13.1
+lambda_10.0_frozen,10.0,frozen,0.8875,15.4

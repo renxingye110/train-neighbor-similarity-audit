@@ -1,5 +1,0 @@
-Dataset,Full mAP,Span (pp),mAP@0.30,mAP@1.00,Matched intervention Delta mAP (pp),Protocol note
-ESCAPE Configuration B,0.8884 +/- 0.0020,11.7,0.7672,0.8839,-11.48,Jaccard-0.40 clean-fold retraining; ESCAPE is included as the clean-fold reference
-DRAMP_antibacterial,0.904 +/- 0.011,2.8 +/- 0.5,0.876,0.904,+0.11 +/- 0.44,Source-held-out neighbor removal and retraining
-APD6,0.941 +/- 0.001,2.1 +/- 0.8,0.920,0.941,+1.47 +/- 0.30,Source-held-out neighbor removal and retraining
-DBAASP,0.930 +/- 0.015,1.8 +/- 0.4,0.914,0.931,-0.14 +/- 0.42,Source-held-out neighbor removal and retraining

@@ -1,51 +1,37 @@
 # Reproduction paths
 
-This note gives the shortest practical routes through the repository, depending on what you want to check.
+## Main figures
 
-## 1. Reproduce the three main figures
-
-Use the CSV files in `data/figure_source/` together with the MATLAB scripts in `scripts/`.
-
-- Figure 1: `scripts/make_figure1.m`
-- Figure 2: `scripts/make_figure2.m`
-- Figure 3: `scripts/make_figure3.m`
-
-Expected outputs are written to `figures/`.
-
-## 2. Regenerate summary outputs
-
-Create the Python environment first:
+Create the Python environment if you need the generic profile utility:
 
 ```bash
 conda env create -f environment.yml
 conda activate train-neighbor-similarity-audit
 ```
 
-Then run:
+For the packaged figures, open MATLAB at the repository root and run:
 
-```bash
-python scripts/source_heldout_summary.py
-python scripts/candidate_prioritization_unique.py
+```matlab
+scripts/make_figure1
+scripts/make_current_figures
 ```
 
-These scripts regenerate the small JSON summaries included in `results/`.
+The source tables are in `data/figure_source/`. The expected outputs are `figures/Figure_1.pdf`, `figures/Figure_2.pdf` and `figures/Figure_3.pdf`.
 
-## 3. Inspect the current manuscript extension summaries
+## Inspect the current primary screen
 
-Use `results/extensions/` when you want to inspect the packaged summaries for:
+Open `results/primary_endpoint_release_table.csv` for all eight prespecified endpoints. The four released cases are also summarized in `data/tables/supp_table_s1_released_primary_endpoint_summary.csv`.
 
-- DeepLoc multitask profiles
-- DeepLoc clean-retraining bridge comparisons
-- broader ESCAPE multilabel and labelwise extension branches
-- TAPE fluorescence and remote homology checks
-- the controlled similarity-mixture simulation
-- the small bridge-correlation summary across case families
+## Inspect supplementary checks
 
-These files are packaged as inspection-ready JSON summaries rather than full rerun pipelines.
+- `data/tables/supp_table_s2_protocol_implementation_checks.csv`
+- `data/tables/supp_table_s3_primary_endpoint_screen.csv`
+- `data/tables/supp_table_s4_quantitative_protocol_checks.csv`
+- `data/tables/supp_table_s5_observational_equivalence_summary.csv`
+- `figures/Supplementary_Figure_S1.pdf`
+- `figures/Supplementary_Figure_S2.pdf`
 
-## 4. Compute a similarity profile on new data
-
-Use:
+## Compute a profile on user-supplied data
 
 ```bash
 python scripts/compute_jaccard_profile.py \
@@ -56,10 +42,4 @@ python scripts/compute_jaccard_profile.py \
   --output profile.json
 ```
 
-This path is generic. It is included so the post hoc performance-similarity profile can be applied to user-supplied train/test splits and prediction outputs.
-
-## 5. Inspect manuscript tables without opening the manuscript
-
-Use `data/tables/` for CSV exports of the manuscript and supplementary tables included in this release.
-
-If you want the exact manuscript-to-file mapping, see `docs/manuscript_file_map.md`.
+Full retraining requires the original third-party data and locally generated embeddings and is outside this compact release.

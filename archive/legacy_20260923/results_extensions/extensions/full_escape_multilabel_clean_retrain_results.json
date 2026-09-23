@@ -1,0 +1,338 @@
+{
+  "metadata": {
+    "script": "full_escape_multilabel_clean_retrain_single_current.py",
+    "device": "cuda",
+    "threshold": 0.4,
+    "feature_meta": {
+      "full_rows": 39759,
+      "reused_existing_embeddings": 38884,
+      "newly_embedded_sequences": 875,
+      "missing_sequences_cache": "results\\experiments\\full_escape_multilabel_single_current\\missing_sequences.json",
+      "missing_embeddings_cache": "results\\experiments\\full_escape_multilabel_single_current\\missing_single_embeddings.npy"
+    },
+    "split_sizes": {
+      "full_train": 15932,
+      "full_val": 15874,
+      "full_test": 7953,
+      "clean_train": 11729,
+      "clean_val": 9377,
+      "clean_test": 4030
+    },
+    "seeds": [
+      42,
+      1665,
+      8914
+    ]
+  },
+  "labels": {
+    "antibacterial": {
+      "status": "completed",
+      "full_split_stats": {
+        "train_n": 15932,
+        "train_pos": 1057,
+        "val_n": 15874,
+        "val_pos": 1103,
+        "test_n": 7953,
+        "test_pos": 520
+      },
+      "clean_split_stats": {
+        "train_n": 11729,
+        "train_pos": 689,
+        "val_n": 9377,
+        "val_pos": 516,
+        "test_n": 4030,
+        "test_pos": 187
+      },
+      "full_retrain": {
+        "seed_runs": [
+          {
+            "seed": 42,
+            "best_val_mAP": 0.8165,
+            "test_mAP": 0.803,
+            "test_AUC": 0.9769
+          },
+          {
+            "seed": 1665,
+            "best_val_mAP": 0.8201,
+            "test_mAP": 0.795,
+            "test_AUC": 0.9753
+          },
+          {
+            "seed": 8914,
+            "best_val_mAP": 0.8228,
+            "test_mAP": 0.7975,
+            "test_AUC": 0.9762
+          }
+        ],
+        "ensemble_test": {
+          "mAP": 0.8045,
+          "AUC": 0.9768
+        }
+      },
+      "clean_retrain": {
+        "seed_runs": [
+          {
+            "seed": 42,
+            "best_val_mAP": 0.7384,
+            "test_mAP": 0.6616,
+            "test_AUC": 0.9623
+          },
+          {
+            "seed": 1665,
+            "best_val_mAP": 0.7423,
+            "test_mAP": 0.6829,
+            "test_AUC": 0.9606
+          },
+          {
+            "seed": 8914,
+            "best_val_mAP": 0.743,
+            "test_mAP": 0.6701,
+            "test_AUC": 0.9583
+          }
+        ],
+        "ensemble_test": {
+          "mAP": 0.6813,
+          "AUC": 0.9606
+        }
+      },
+      "observed_retraining_delta_pp": 12.3
+    },
+    "antifungal": {
+      "status": "completed",
+      "full_split_stats": {
+        "train_n": 15932,
+        "train_pos": 462,
+        "val_n": 15874,
+        "val_pos": 449,
+        "test_n": 7953,
+        "test_pos": 240
+      },
+      "clean_split_stats": {
+        "train_n": 11729,
+        "train_pos": 297,
+        "val_n": 9377,
+        "val_pos": 191,
+        "test_n": 4030,
+        "test_pos": 91
+      },
+      "full_retrain": {
+        "seed_runs": [
+          {
+            "seed": 42,
+            "best_val_mAP": 0.2622,
+            "test_mAP": 0.2807,
+            "test_AUC": 0.8694
+          },
+          {
+            "seed": 1665,
+            "best_val_mAP": 0.2713,
+            "test_mAP": 0.2826,
+            "test_AUC": 0.8623
+          },
+          {
+            "seed": 8914,
+            "best_val_mAP": 0.2677,
+            "test_mAP": 0.2701,
+            "test_AUC": 0.8732
+          }
+        ],
+        "ensemble_test": {
+          "mAP": 0.2793,
+          "AUC": 0.8699
+        }
+      },
+      "clean_retrain": {
+        "seed_runs": [
+          {
+            "seed": 42,
+            "best_val_mAP": 0.1448,
+            "test_mAP": 0.1778,
+            "test_AUC": 0.8648
+          },
+          {
+            "seed": 1665,
+            "best_val_mAP": 0.1661,
+            "test_mAP": 0.1866,
+            "test_AUC": 0.8689
+          },
+          {
+            "seed": 8914,
+            "best_val_mAP": 0.1523,
+            "test_mAP": 0.18,
+            "test_AUC": 0.861
+          }
+        ],
+        "ensemble_test": {
+          "mAP": 0.1893,
+          "AUC": 0.8686
+        }
+      },
+      "observed_retraining_delta_pp": 9.0
+    },
+    "antiviral": {
+      "status": "completed",
+      "full_split_stats": {
+        "train_n": 15932,
+        "train_pos": 82,
+        "val_n": 15874,
+        "val_pos": 89,
+        "test_n": 7953,
+        "test_pos": 47
+      },
+      "clean_split_stats": {
+        "train_n": 11729,
+        "train_pos": 60,
+        "val_n": 9377,
+        "val_pos": 48,
+        "test_n": 4030,
+        "test_pos": 18
+      },
+      "full_retrain": {
+        "seed_runs": [
+          {
+            "seed": 42,
+            "best_val_mAP": 0.3241,
+            "test_mAP": 0.2963,
+            "test_AUC": 0.9035
+          },
+          {
+            "seed": 1665,
+            "best_val_mAP": 0.3307,
+            "test_mAP": 0.2895,
+            "test_AUC": 0.9051
+          },
+          {
+            "seed": 8914,
+            "best_val_mAP": 0.3172,
+            "test_mAP": 0.298,
+            "test_AUC": 0.904
+          }
+        ],
+        "ensemble_test": {
+          "mAP": 0.2989,
+          "AUC": 0.9066
+        }
+      },
+      "clean_retrain": {
+        "seed_runs": [
+          {
+            "seed": 42,
+            "best_val_mAP": 0.0671,
+            "test_mAP": 0.0381,
+            "test_AUC": 0.7805
+          },
+          {
+            "seed": 1665,
+            "best_val_mAP": 0.0573,
+            "test_mAP": 0.0376,
+            "test_AUC": 0.7946
+          },
+          {
+            "seed": 8914,
+            "best_val_mAP": 0.0773,
+            "test_mAP": 0.0387,
+            "test_AUC": 0.7621
+          }
+        ],
+        "ensemble_test": {
+          "mAP": 0.0401,
+          "AUC": 0.7819
+        }
+      },
+      "observed_retraining_delta_pp": 25.9
+    },
+    "antiparasitic": {
+      "status": "skipped_insufficient_support",
+      "skip_reason": "insufficient train positives (15 < 20)",
+      "full_split_stats": {
+        "train_n": 15932,
+        "train_pos": 15,
+        "val_n": 15874,
+        "val_pos": 11,
+        "test_n": 7953,
+        "test_pos": 2
+      },
+      "clean_split_stats": {
+        "train_n": 11729,
+        "train_pos": 12,
+        "val_n": 9377,
+        "val_pos": 8,
+        "test_n": 4030,
+        "test_pos": 1
+      }
+    },
+    "antimicrobial": {
+      "status": "completed",
+      "full_split_stats": {
+        "train_n": 15932,
+        "train_pos": 1396,
+        "val_n": 15874,
+        "val_pos": 1440,
+        "test_n": 7953,
+        "test_pos": 706
+      },
+      "clean_split_stats": {
+        "train_n": 11729,
+        "train_pos": 901,
+        "val_n": 9377,
+        "val_pos": 667,
+        "test_n": 4030,
+        "test_pos": 257
+      },
+      "full_retrain": {
+        "seed_runs": [
+          {
+            "seed": 42,
+            "best_val_mAP": 0.7708,
+            "test_mAP": 0.7457,
+            "test_AUC": 0.9354
+          },
+          {
+            "seed": 1665,
+            "best_val_mAP": 0.7734,
+            "test_mAP": 0.7531,
+            "test_AUC": 0.9344
+          },
+          {
+            "seed": 8914,
+            "best_val_mAP": 0.7695,
+            "test_mAP": 0.7463,
+            "test_AUC": 0.9359
+          }
+        ],
+        "ensemble_test": {
+          "mAP": 0.7502,
+          "AUC": 0.9363
+        }
+      },
+      "clean_retrain": {
+        "seed_runs": [
+          {
+            "seed": 42,
+            "best_val_mAP": 0.6837,
+            "test_mAP": 0.6553,
+            "test_AUC": 0.9261
+          },
+          {
+            "seed": 1665,
+            "best_val_mAP": 0.6815,
+            "test_mAP": 0.6481,
+            "test_AUC": 0.9219
+          },
+          {
+            "seed": 8914,
+            "best_val_mAP": 0.6832,
+            "test_mAP": 0.6561,
+            "test_AUC": 0.9261
+          }
+        ],
+        "ensemble_test": {
+          "mAP": 0.6553,
+          "AUC": 0.9266
+        }
+      },
+      "observed_retraining_delta_pp": 9.5
+    }
+  },
+  "runtime_sec": 1157.8
+}

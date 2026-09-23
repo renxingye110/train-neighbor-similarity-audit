@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "script": "tape_formal_current.py",
+    "benchmark": "TAPE fluorescence",
+    "task": "protein function regression",
+    "model_family": "RidgeCV on ESM-2 embeddings",
+    "n_train": 21446,
+    "n_val": 5362,
+    "n_test": 27217,
+    "jaccard_thresholds": [
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      0.98,
+      1.0
+    ],
+    "clean_threshold": 0.95,
+    "n_train_clean": 18842,
+    "n_train_removed": 2604
+  },
+  "full_model": {
+    "alpha": 100.0,
+    "spearman_r": 0.5882,
+    "pearson_r": 0.5769,
+    "mse": 1.282534
+  },
+  "clean_model": {
+    "alpha": 100.0,
+    "spearman_r": 0.5875,
+    "pearson_r": 0.5778,
+    "mse": 1.269776
+  },
+  "bridge": {
+    "profile_span_spearman": 0.6548,
+    "signed_retraining_delta_spearman": 0.0007,
+    "abs_retraining_delta_spearman": 0.0007,
+    "signed_retraining_delta_pearson": -0.001,
+    "signed_retraining_delta_mse": -0.012758,
+    "monotonic_non_decreasing": true
+  },
+  "gradient": [
+    {
+      "threshold": 0.8,
+      "n_retained": 101,
+      "retention_pct": 0.4,
+      "spearman_r": -0.0666,
+      "pearson_r": -0.078,
+      "mse": 3.446725
+    },
+    {
+      "threshold": 0.85,
+      "n_retained": 1141,
+      "retention_pct": 4.2,
+      "spearman_r": 0.0158,
+      "pearson_r": 0.0713,
+      "mse": 3.399029
+    },
+    {
+      "threshold": 0.9,
+      "n_retained": 7335,
+      "retention_pct": 27.0,
+      "spearman_r": 0.1655,
+      "pearson_r": 0.2874,
+      "mse": 2.354247
+    },
+    {
+      "threshold": 0.95,
+      "n_retained": 24751,
+      "retention_pct": 90.9,
+      "spearman_r": 0.5481,
+      "pearson_r": 0.5549,
+      "mse": 1.351612
+    },
+    {
+      "threshold": 0.98,
+      "n_retained": 27217,
+      "retention_pct": 100.0,
+      "spearman_r": 0.5882,
+      "pearson_r": 0.5769,
+      "mse": 1.282534
+    },
+    {
+      "threshold": 1.0,
+      "n_retained": 27217,
+      "retention_pct": 100.0,
+      "spearman_r": 0.5882,
+      "pearson_r": 0.5769,
+      "mse": 1.282534
+    }
+  ],
+  "jaccard_stats": {
+    "mean": 0.9136,
+    "median": 0.9231,
+    "max": 0.9782,
+    "pct_above_40": 100.0
+  }
+}

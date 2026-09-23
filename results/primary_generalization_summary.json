@@ -1,0 +1,16 @@
+{
+  "n_primary_endpoints": 8,
+  "n_released": 4,
+  "release_coverage": 0.5,
+  "release_coverage_wilson95": [
+    0.21521606221387757,
+    0.7847839377861224
+  ],
+  "n_direction_agree_among_released": 4,
+  "direction_agreement_among_released": 1.0,
+  "direction_agreement_wilson95": [
+    0.5101091635454027,
+    1.0
+  ],
+  "note": "Primary endpoint list was fixed before held-out retraining outcomes were inspected; complete screened outcomes remain in the negative/boundary archive."
+}

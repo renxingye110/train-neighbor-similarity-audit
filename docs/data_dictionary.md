@@ -4,16 +4,13 @@
 
 - `figure1_threshold_profile.csv`: threshold-specific mAP values for the ESCAPE reference profile shown in Figure 1.
 - `figure1_auc_profile.csv`: threshold-specific AUC values for the inset in Figure 1.
-- `figure2_source_heldout_profiles.csv`: threshold-level source-held-out profile data across ESCAPE, DRAMP, APD6, and DBAASP.
-- `figure2_endpoint_spans.csv`: endpoint span summary used for the left comparison panel in Figure 2.
-- `figure2_retraining_changes.csv`: source-held-out neighbor-removal and retraining change summary used for the right comparison panel in Figure 2.
-- `figure3_unique_candidate_pool_summary.csv`: candidate-pool summary for the retrospective prioritization example.
-- `figure3_candidate_pool_points.csv`: full unique-sequence candidate pool used for the Figure 3 scatter panel.
-- `figure3_raw_top20.csv`: the raw Top 20 candidate list before the Jaccard constraint.
-- `figure3_constrained_top20.csv`: the Top 20 candidate list after applying the Jaccard constraint.
-- `figure3_similarity_composition.csv`: low/medium/high similarity counts for the raw and similarity-constrained Top 20 lists.
-- `figure3_replaced_candidates.csv`: representative candidates whose Top-20 membership changed.
+- `figure2_primary_endpoint_summary.csv`: complete eight-endpoint primary screen used to derive the released-case Figure 2 comparison.
+- `figure3_released_case_summary.csv`: the four released primary cases used in Figure 3.
+- `supp_figure_s1_primary_endpoint_screen.csv`: complete primary endpoint values for Supplementary Figure S1.
+- `supp_figure_s2_proxy_bins.csv`: bin-level Needleman-Wunsch identity summary for Supplementary Figure S2.
 
 ## Table exports
 
-The `data/tables/` directory contains CSV exports of the manuscript tables included in this release. The exported files follow the current manuscript tables. A few numeric uncertainty entries use ASCII `+/-` notation so the files remain portable across spreadsheet and command-line tools. Any abbreviations remain defined by the manuscript captions and surrounding text.
+The `data/tables/` directory contains CSV exports of Table 1 and Supplementary Tables S1-S5 in the current manuscript. A few numeric uncertainty entries use ASCII `+/-` notation so the files remain portable across spreadsheet and command-line tools. Any abbreviations remain defined by the manuscript captions and surrounding text.
+
+Earlier table and figure-source exports are retained under `archive/legacy_20260923/` and are not part of the current release.

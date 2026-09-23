@@ -1,0 +1,6 @@
+Category,Count,Definition
+A. True hemolytic,"2,020",Experimentally verified hemolytic activity (quantitative HC50 or qualitative description)
+B. True non-hemolytic,8,Experimentally tested and confirmed non-hemolytic
+C. No available data,"5,592","No hemolysis information in the reference (untested; including 5,563 records from DRAMP)"
+D. Unannotated,"52,799",No hemolytic_activity field in the source record
+Misclassification ratio,695:1,"In DRAMP, naive substring matching confused 5,563 untested records with eight experimentally non-hemolytic records"

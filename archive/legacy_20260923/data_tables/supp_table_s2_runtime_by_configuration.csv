@@ -1,0 +1,8 @@
+Experiment,Configuration,Time (min),Hardware,Notes
+Two-by-two factor ablation,4 configurations x 3 seeds,142,CPU-only workstation,50 epochs per seed; batch=64
+Jaccard-0.40 retraining,4 configurations x 3 seeds,122,CPU-only workstation,Includes Jaccard-based clean-fold construction
+Multi-threshold k-mer Jaccard performance-similarity curve,Configuration B x 8 thresholds,23,CPU-only workstation,Single evaluation
+k-mer logistic regression,Single model,<1,CPU-only workstation,"L2 LR, single run"
+Length-stratified analysis,3 bins x 8 thresholds,NA,CPU-only workstation,Evaluated by length bin
+Jaccard validation and perturbation,Config B,NA,CPU-only workstation,Inference only
+SHAP interpretability,Config B,NA,CPU-only workstation,Deep SHAP; 500 samples

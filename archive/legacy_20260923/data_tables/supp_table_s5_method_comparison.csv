@@ -1,0 +1,5 @@
+Method,Method path,Limitation,Advantage of the k-mer Jaccard performance-similarity curve
+SpanSeq [18],Prospective split design using k-mer distance,Requires access to benchmark construction,Post hoc analysis; no resplitting required
+SafeBench-Seq [20],Cluster-level holdout using CD-HIT,Requires complete benchmark resplitting,No resplitting required; continuous curve
+AU-GOOD [19],Theoretical OOD evaluation framework,Lacks a specific similarity metric or implementation,Concrete implemented similarity metric
+GraphFLA [21],Retrospective fitness-landscape features,Designed for fitness prediction rather than sequence classification,Task-agnostic post hoc diagnostic curve

@@ -1,25 +1,26 @@
-# Reproducibility package for train-neighbor similarity-resolved evaluation of protein sequence benchmarks
+# Reproducibility package for similarity-stratified retraining sensitivity in fixed protein-sequence benchmarks
 
-This repository accompanies the manuscript "Train-neighbor profiles for similarity-resolved evaluation of fixed protein sequence benchmarks."
+This repository accompanies the manuscript "Similarity-stratified retraining sensitivity in fixed protein-sequence benchmarks."
 
 This repository is a compact reproducibility package rather than a full project dump. It includes the processed result tables, figure source data, machine-readable manuscript tables, plotting scripts, and summary outputs needed to inspect the reported results. It does not redistribute raw third-party database snapshots, large embedding arrays, checkpoint archives, historical manuscript files, or submission-only artwork assets.
 
+The Zenodo DOI below identifies the earlier archived snapshot; mint a new versioned release after this synchronization is pushed.
 Archived release (Zenodo DOI): https://doi.org/10.5281/zenodo.21235886
 
 ## Repository purpose
 
 - Provide the data tables and scripts needed to reproduce the main figures without retraining models.
 - Keep machine-readable versions of the manuscript tables that support the main claims.
-- Package lightweight JSON summaries for the bridge analyses, multilabel extensions, independent-benchmark checks, and controlled simulation discussed in the current manuscript.
+- Package the complete eight-endpoint primary screen, released-case summaries, protocol checks and supporting source data discussed in the current manuscript and Supplementary Tables S1-S5.
 - Document which public data sources were reused and why raw source records are not redistributed here.
 
-This is not an AMP discovery release. The Figure 3 example is a retrospective train-neighbor-aware reranking exercise that shows how a similarity constraint can change a fixed ranked list of already annotated antibacterial-positive peptides.
+This is not an AMP discovery release. The primary validation compares a fixed ESCAPE antifungal endpoint with an exhaustive seven-label TAPE remote-homology family-holdout screen. Four of eight prespecified endpoints satisfy the release rule; the complete endpoint denominator is retained in the machine-readable tables.
 
 ## Citation
 
 If you use this repository, please cite the Zenodo record:
 
-Ren X. Reproducibility materials for train-neighbor similarity-resolved evaluation of fixed protein sequence benchmarks. Zenodo. 2026. doi: 10.5281/zenodo.21235886
+Ren X. Reproducibility materials for similarity-stratified retraining sensitivity in fixed protein-sequence benchmarks. Zenodo. 2026. doi: 10.5281/zenodo.21235886
 
 ## Start here
 
@@ -28,7 +29,7 @@ If you only need a quick orientation, use these three documents:
 - `docs/repository_guide.md`: what each top-level folder is for
 - `docs/reproduction_paths.md`: the shortest route to reproduce figures or summaries
 - `docs/manuscript_file_map.md`: where each figure and manuscript table lives in the repository
-- `docs/current_manuscript_extensions.md`: where the additional bridge, multilabel, TAPE, DeepLoc, and simulation summaries live
+- `docs/current_manuscript_extensions.md`: current primary screen, protocol checks and repository scope
 
 ## Quick start
 
@@ -37,8 +38,7 @@ If you only need a quick orientation, use these three documents:
 ```bash
 conda env create -f environment.yml
 conda activate train-neighbor-similarity-audit
-python scripts/source_heldout_summary.py
-python scripts/candidate_prioritization_unique.py
+python scripts/compute_jaccard_profile.py --help
 ```
 
 ### Reproduce the manuscript figures
@@ -47,8 +47,7 @@ The main figures were rendered in MATLAB from the CSV files in `data/figure_sour
 
 ```text
 Open scripts/make_figure1.m in MATLAB and run it.
-Open scripts/make_figure2.m in MATLAB and run it.
-Open scripts/make_figure3.m in MATLAB and run it.
+Open scripts/make_current_figures.m in MATLAB and run it.
 ```
 
 Expected outputs:
@@ -80,9 +79,9 @@ Reproducing the figures from the included tables should take only a few minutes 
 
 - `data/figure_source/`: source tables for Figures 1-3
 - `data/tables/`: machine-readable CSV exports of the manuscript and supplementary tables included in this release
-- `scripts/`: a generic Jaccard-profile CLI, summary scripts for the source-held-out and retrospective prioritization analyses, and MATLAB figure scripts
-- `results/`: summary JSON exports, current-manuscript extension summaries, and file checksums
-- `figures/`: final exported main figures
+- `scripts/`: the generic Jaccard-profile CLI and current MATLAB figure script
+- `results/`: primary endpoint summaries, screened-outcome archive and file checksums
+- `figures/`: final exported main and supplementary figures
 
 More detail is provided in `docs/repository_guide.md`.
 
@@ -95,6 +94,8 @@ More detail is provided in `docs/repository_guide.md`.
 - private planning notes or other local working materials
 
 Raw third-party records should be obtained from the original cited sources listed in `docs/third_party_data_sources.md`.
+
+Materials from earlier manuscript versions are kept only in `archive/legacy_20260923/` and are not part of the current release.
 
 ## Manuscript file map
 
