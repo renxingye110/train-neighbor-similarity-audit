@@ -1,7 +1,0 @@
-Case family and task,Profile response,Corresponding evidence,Response regime and evidential role
-ESCAPE antibacterial classification,11.7-pp AP span,Clean-fold retraining: -11.48 pp,Similarity-sensitive; primary alignment case
-DeepLoc localization tasks,Near-zero spans,Retraining changes: 0.03-0.92 pp absolute,Low-effect; non-AMP contrast
-Source-held-out AMP checks,Small spans: 1.8-2.8 pp,Retraining changes: -0.14 to +1.47 pp,Low-effect; internal specificity check
-TAPE fluorescence,Large span in a high-similarity window,Full-test Spearman: 0.5882 to 0.5875,Benchmark-geometry boundary; support-limited case
-TAPE remote homology,16.21-pp macro-AP span,Clean retraining: 0.7423 to 0.6629,Intermediate; independent benchmark extension
-Controlled ESCAPE resampling,Span increased with high-similarity fraction,Predictions and prevalence controlled,Composition-gradient control; not a task regime

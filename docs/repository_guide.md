@@ -10,7 +10,6 @@ This repository is the compact reproducibility package for the current manuscrip
 - `results/`: the complete eight-endpoint primary screen, release summary and screened-outcome archive.
 - `figures/`: exported current main and supplementary figures.
 - `docs/`: manuscript mapping, reproduction paths, data availability and provenance notes.
-- `archive/legacy_20260923/`: earlier manuscript artifacts retained for provenance only.
 
 ## Current evidence package
 
@@ -22,4 +21,4 @@ The current release is organized around:
 4. train-only PCA, three-seed, bootstrap and similarity-proxy checks;
 5. the observational-equivalence stress-test summary.
 
-The repository includes processed outputs and source data for inspection and figure reproduction. It does not redistribute raw third-party sequence snapshots, embedding caches or model checkpoints.
+The repository includes processed outputs and source data for inspection and figure reproduction. It does not redistribute raw third-party sequence snapshots, embedding caches, model checkpoints or failed-submission historical artifacts.

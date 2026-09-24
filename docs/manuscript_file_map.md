@@ -32,4 +32,4 @@ This map follows the current manuscript and its current Supplementary Tables S1-
 - Complete screened-outcome archive -> `results/generalization_screened_outcomes.csv`
 - Screened-outcome archive notes -> `results/generalization_screened_outcomes_README.md`
 
-Earlier manuscript artifacts are retained under `archive/legacy_20260923/` for provenance and are not part of the current manuscript release.
+Earlier manuscript artifacts are not part of the current manuscript release.

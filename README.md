@@ -94,7 +94,7 @@ More detail is provided in `docs/repository_guide.md`.
 
 Raw third-party records should be obtained from the original cited sources listed in `docs/third_party_data_sources.md`.
 
-Materials from earlier manuscript versions are kept only in `archive/legacy_20260923/` and are not part of the current release.
+Earlier manuscript versions are not included in the current release.
 
 ## Manuscript file map
 

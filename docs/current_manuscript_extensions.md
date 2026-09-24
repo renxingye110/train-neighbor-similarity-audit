@@ -13,4 +13,4 @@ The current supplementary evidence package contains:
 
 The complete screened-outcome archive is retained in `results/generalization_screened_outcomes.csv`. It includes boundary and support-gated rows for auditability and is not used to expand the prespecified primary endpoint claims.
 
-Earlier DeepLoc, source-held-out, candidate-prioritization and other exploratory artifacts are retained under `archive/legacy_20260923/` and are not represented as current manuscript results.
+Earlier exploratory branches are not represented as current manuscript results.
