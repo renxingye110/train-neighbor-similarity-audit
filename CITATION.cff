@@ -6,7 +6,7 @@ authors:
   - family-names: "Ren"
     given-names: "Xingye"
     orcid: "https://orcid.org/0009-0000-0152-8622"
-version: 2.3.0
+version: 2.4.0
 doi: 10.5281/zenodo.20842728
 license: MIT
 repository-code: "https://github.com/renxingye110/train-neighbor-similarity-audit"
