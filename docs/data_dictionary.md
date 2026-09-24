@@ -11,6 +11,6 @@
 
 ## Table exports
 
-The `data/tables/` directory contains CSV exports of Table 1 and Supplementary Tables S1-S5 in the current manuscript. A few numeric uncertainty entries use ASCII `+/-` notation so the files remain portable across spreadsheet and command-line tools. Any abbreviations remain defined by the manuscript captions and surrounding text.
+The `data/tables/` directory contains CSV exports of Table 1 and Supplementary Tables S1-S6 in the current manuscript. A few numeric uncertainty entries use ASCII `+/-` notation so the files remain portable across spreadsheet and command-line tools. Any abbreviations remain defined by the manuscript captions and surrounding text.
 
 Earlier table and figure-source exports are not part of the current release and are not distributed in the public repository.

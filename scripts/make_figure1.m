@@ -10,7 +10,9 @@ mapTable = readtable(fullfile(dataDir, 'figure1_threshold_profile.csv'));
 aucTable = readtable(fullfile(dataDir, 'figure1_auc_profile.csv'));
 threshold = mapTable.threshold_pct';
 mapVals = mapTable.mAP_pct';
+mapSD = mapTable.mAP_sd_pp';
 aucVals = aucTable.AUC_pct';
+aucSD = aucTable.AUC_sd_pp';
 
 blue = [0.11 0.39 0.70];
 grey = [0.34 0.34 0.34];
@@ -19,14 +21,14 @@ guideGrey = [0.60 0.60 0.60];
 fig = figure('Color', 'w', 'Units', 'inches', 'Position', [0.8 0.8 6.5 3.35]);
 ax = axes(fig, 'Position', [0.10 0.16 0.69 0.70]);
 hold(ax, 'on');
-plot(ax, threshold, mapVals, '-o', ...
+errorbar(ax, threshold, mapVals, mapSD, '-o', ...
     'Color', blue, 'MarkerFaceColor', blue, 'MarkerEdgeColor', 'w', ...
-    'LineWidth', 1.60, 'MarkerSize', 6.0);
+    'LineWidth', 1.60, 'MarkerSize', 6.0, 'CapSize', 5);
 grid(ax, 'on');
 ax.XLim = [28 104];
-ax.YLim = [74 90.5];
+ax.YLim = [70 90.5];
 ax.XTick = threshold;
-ax.YTick = 74:2:90;
+ax.YTick = 70:2:90;
 xlabel(ax, 'Maximum training-set 3-mer Jaccard threshold (%)');
 ylabel(ax, 'mAP (%)');
 
@@ -34,15 +36,15 @@ plot(ax, [30 100], [mapVals(1) mapVals(1)], ':', ...
     'Color', guideGrey, 'LineWidth', 0.9);
 plot(ax, [100 100], [mapVals(1) mapVals(end)], ':', ...
     'Color', guideGrey, 'LineWidth', 0.9);
-text(ax, 63.0, 77.55, 'Endpoint span = 11.67 pp', ...
+text(ax, 62.5, 75.0, sprintf('Endpoint span = %.2f pp', mapVals(end) - mapVals(1)), ...
     'FontName', 'Arial', 'FontSize', 9.0, 'FontWeight', 'bold', ...
     'Color', blue, 'BackgroundColor', 'w', 'Margin', 2.0);
 
 inset = axes(fig, 'Position', [0.73 0.40 0.23 0.27]);
 hold(inset, 'on');
-plot(inset, threshold, aucVals, '-s', ...
+errorbar(inset, threshold, aucVals, aucSD, '-s', ...
     'Color', grey, 'MarkerFaceColor', [0.74 0.74 0.74], ...
-    'MarkerEdgeColor', 'w', 'LineWidth', 1.35, 'MarkerSize', 4.6);
+    'MarkerEdgeColor', 'w', 'LineWidth', 1.35, 'MarkerSize', 4.6, 'CapSize', 4);
 grid(inset, 'on');
 inset.Box = 'on';
 inset.LineWidth = 0.75;

@@ -1,7 +1,7 @@
 check,result,role
 Train-only PCA,PCA fit on Fold 1 and applied to Fold 2/test,Protocol control
-Three model seeds,Reference mAP 88.84 +/- 0.20%; AUC 98.51 +/- 0.10%; F1 82.6 +/- 1.1%,Model uncertainty
-Cluster bootstrap,ESCAPE span 11.67 pp; 95% CI 7.19-16.37 pp,Profile uncertainty
+Three model seeds,Train-only PCA reference mAP 87.92 +/- 0.30%; AUC 98.35 +/- 0.06%; F1 82.24 +/- 0.26%,Model uncertainty
+Cluster bootstrap,Train-only PCA profile span 14.51 +/- 1.47 pp across seeds,Profile uncertainty
 Jaccard versus alignment,Spearman rho=0.906; Pearson r=0.828; n=7762,Similarity proxy check
 k-mer sensitivity,k=2-5 preserved the threshold ordering,Input-axis robustness
 Support calibration,Frozen maximum hub-z cutoff=23.7041,Eligibility rule

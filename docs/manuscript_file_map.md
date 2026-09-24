@@ -1,6 +1,6 @@
 # Manuscript file map
 
-This map follows the current manuscript and its current Supplementary Tables S1-S5.
+This map follows the current manuscript and its current Supplementary Tables S1-S6.
 
 ## Main figures
 

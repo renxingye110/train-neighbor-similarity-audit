@@ -10,10 +10,10 @@ Current Zenodo concept DOI (latest version): https://doi.org/10.5281/zenodo.2084
 
 - Provide the data tables and scripts needed to reproduce the main figures without retraining models.
 - Keep machine-readable versions of the manuscript tables that support the main claims.
-- Package the complete eight-endpoint primary screen, released-case summaries, protocol checks and supporting source data discussed in the current manuscript and Supplementary Tables S1-S5.
+- Package the complete eight-endpoint validation screen, the train-fold-only PCA development profile, released-case summaries, protocol checks and supporting source data discussed in the current manuscript and Supplementary Tables S1-S6.
 - Document which public data sources were reused and why raw source records are not redistributed here.
 
-This is not an AMP discovery release. The primary validation compares a fixed ESCAPE antifungal endpoint with an exhaustive seven-label TAPE remote-homology family-holdout screen. Four of eight prespecified endpoints satisfy the release rule; the complete endpoint denominator is retained in the machine-readable tables.
+This is not an AMP discovery release. The development analysis uses an ESCAPE antibacterial endpoint with PCA fitted on the training fold only. Held-out validation compares the ESCAPE antifungal endpoint within the same benchmark and an exhaustive seven-label TAPE remote-homology family-holdout screen. Four of eight prespecified validation endpoints satisfy the release rule; the complete endpoint denominator is retained in the machine-readable tables.
 
 ## Citation
 

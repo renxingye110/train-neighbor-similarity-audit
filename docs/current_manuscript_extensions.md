@@ -1,6 +1,6 @@
 # Current manuscript extensions
 
-The current manuscript uses a fixed primary endpoint list consisting of ESCAPE antifungal and all seven one-vs-rest labels in the TAPE remote-homology family-holdout screen. The complete eight-row screen is in `results/primary_endpoint_release_table.csv` and `data/tables/supp_table_s3_primary_endpoint_screen.csv`.
+The current manuscript separates the ESCAPE antibacterial train-fold-only PCA development endpoint from the held-out validation set. The held-out validation set consists of ESCAPE antifungal as within-benchmark confirmation and all seven one-vs-rest labels in the TAPE remote-homology family-holdout screen as external cross-task validation. The complete eight-row validation screen is in `results/primary_endpoint_release_table.csv` and `data/tables/supp_table_s3_primary_endpoint_screen.csv`.
 
 The current supplementary evidence package contains:
 
@@ -9,6 +9,7 @@ The current supplementary evidence package contains:
 - the complete endpoint screen (`data/tables/supp_table_s3_primary_endpoint_screen.csv`)
 - quantitative PCA, seed, bootstrap and similarity checks (`data/tables/supp_table_s4_quantitative_protocol_checks.csv`)
 - the observational-equivalence stress-test summary (`data/tables/supp_table_s5_observational_equivalence_summary.csv`)
+- the complete-pool versus train-fold-only PCA scope comparison (`data/tables/supp_table_s6_pca_scope_sensitivity.csv`)
 - current primary-screen and similarity-proxy figures in `figures/`
 
 The complete screened-outcome archive is retained in `results/generalization_screened_outcomes.csv`. It includes boundary and support-gated rows for auditability and is not used to expand the prespecified primary endpoint claims.

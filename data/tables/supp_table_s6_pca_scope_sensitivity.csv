@@ -1,0 +1,7 @@
+quantity,complete_pool_pca,train_fold_only_pca
+PCA fitting scope,"59,345 filtered sequences before fold indexing",ESCAPE Fold 1 only
+mAP at Jaccard <0.30,76.72%,72.59% +/- 1.70%
+mAP at Jaccard <1.00,88.39%,87.10% +/- 0.32%
+Endpoint profile span,11.67 pp,14.51 +/- 1.47 pp
+Clean-retraining bridge,Archived comparison branch,+11.96 +/- 0.62 pp full-minus-clean
+Role in manuscript,Supplementary sensitivity,Primary Config B development analysis
