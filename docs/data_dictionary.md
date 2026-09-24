@@ -13,4 +13,4 @@
 
 The `data/tables/` directory contains CSV exports of Table 1 and Supplementary Tables S1-S5 in the current manuscript. A few numeric uncertainty entries use ASCII `+/-` notation so the files remain portable across spreadsheet and command-line tools. Any abbreviations remain defined by the manuscript captions and surrounding text.
 
-Earlier table and figure-source exports are retained under `archive/legacy_20260923/` and are not part of the current release.
+Earlier table and figure-source exports are not part of the current release and are not distributed in the public repository.
