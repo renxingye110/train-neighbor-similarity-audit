@@ -1,0 +1,21 @@
+{
+  "kmer_size": 3,
+  "top_k": 20,
+  "profile_thresholds": [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+  "validation_profile_span": [0.4, 1.0],
+  "primary_profile_span": [0.3, 1.0],
+  "strict_threshold": 0.4,
+  "high_similarity_threshold": 0.6,
+  "clean_train_threshold": 0.4,
+  "min_profile_span_pp": 5.0,
+  "min_abs_geometry": 0.1,
+  "min_test_per_class": 25,
+  "min_clean_train_per_class": 25,
+  "min_effective_n_p10": 5.0,
+  "hub_z_cutoff": 23.704131673352453,
+  "hub_null_replicates": 1000,
+  "permutation_seed": 20260922,
+  "geometry_weighting": "sample",
+  "tape_logistic_max_iter": 400,
+  "tape_logistic_solver": "lbfgs"
+}

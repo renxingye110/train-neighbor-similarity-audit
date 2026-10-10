@@ -1,0 +1,9 @@
+endpoint,P_pp,A_axis,hub_z,heldout_R_pp,support,decision,reason
+ESCAPE antifungal,9.08,0.291866,16.502294,9.00,Pass,Released,Primary released case
+TAPE class 0,11.5555795293,0.4346275560,7.371573,7.9662521009,Pass,Released,Primary released case
+TAPE class 1,10.9323215623,0.2899790602,13.244002,4.0874687746,Pass,Released,Primary released case
+TAPE class 2,1.4705017265,0.5155910882,23.928003,2.7245918158,Fail,Abstained,Hub-z concentration
+TAPE class 3,9.4581500014,0.4597497570,6.112283,8.2725186709,Pass,Released,Primary released case
+TAPE class 4,12.1370364418,1.3415545248,6.784796,6.4916202952,Fail,Abstained,Strict class support
+TAPE class 5,66.4814814815,0.6723524997,0.000000,31.7729204611,Fail,Abstained,Strict class support
+TAPE class 6,0.2165419373,0.0716177557,18.545589,0.6739854406,Pass,Abstained,Low profile/geometry signal

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying manuscript."
+title: "Train-neighbor similarity diagnostic for fixed protein-sequence benchmarks"
+version: "1.00"
+type: software
+authors:
+  - family-names: "Ren"
+    given-names: "Xingye"
+    orcid: "https://orcid.org/0009-0000-0152-8622"
+license: MIT
+repository-code: "https://github.com/renxingye110/train-neighbor-similarity-audit"
+abstract: "Core code for similarity-stratified performance profiles, task-native label geometry, support gating, and clean-retraining comparisons, with a fixed-prediction interface and a TAPE remote-homology reproduction workflow."
+keywords:
+  - protein benchmark evaluation
+  - protein sequence modeling
+  - k-mer Jaccard similarity
+  - retraining sensitivity
+  - selective diagnostic

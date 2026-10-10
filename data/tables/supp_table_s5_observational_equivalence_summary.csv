@@ -1,0 +1,7 @@
+component,result,interpretation
+Paired synthetic worlds,5 pairs / 10 worlds,Same sequences labels similarity graph and fixed predictions within each pair
+Observed P difference,Maximum 0.000 percentage points within pairs,Profile alone was held fixed
+Clean-retraining directions,Opposite directions in all 5 pairs,Demonstrates pre-retraining non-identifiability
+P-only release,8/10 worlds,Unrestricted directional output
+P+A release,4/10 worlds,Label geometry reduces but does not remove ambiguity
+P+A+S release,0/10 worlds; abstention in all 10,Support gate rejects insufficient evidence
